@@ -86,7 +86,7 @@ To learn how to persist your Azure sign in across sessions, see [Persist user cr
 
 ## Update the Azure PowerShell module
 
-You can update your Azure PowerShell installation by running [Update-Module](/powershell/module/powershellget/update-module). This command does __not__ uninstall earlier versions.
+You can update your Azure PowerShell installation by running [Update-Module](/powershell/module/powershellget/update-module). This command does **not** uninstall earlier versions.
 
 ```powershell
 Update-Module -Name AzureRM

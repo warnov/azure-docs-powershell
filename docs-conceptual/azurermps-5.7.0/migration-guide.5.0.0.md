@@ -84,7 +84,7 @@ Set-AzureRmBatchComputeNodeUser [other required parameters] -Password $SecureStr
 ```
 
 ### **New-AzureBatchTask**
- - Removed the `RunElevated` switch and replaced it with `UserIdentity`.
+- Removed the `RunElevated` switch and replaced it with `UserIdentity`.
 
 ```powershell
 # Old
@@ -114,7 +114,7 @@ New-AzureBatchTask [other parameters] -MultiInstanceSettings $settings
 ```
 
 ### **Get-AzureBatchTask**
- - Removed the `RunElevated` property on `PSCloudTask`. The `UserIdentity` property has been added to replace `RunElevated`.
+- Removed the `RunElevated` property on `PSCloudTask`. The `UserIdentity` property has been added to replace `RunElevated`.
 
 ```powershell
 # Old
@@ -161,8 +161,8 @@ $task.ExecutionInformation.FailureInformation
 This additionally impacts: Get-AzureBatchPool, Get-AzureBatchSubtask, and Get-AzureBatchJobPreparationAndReleaseTaskStatus
 
 ### **New-AzureBatchPool**
- - Removed `TargetDedicated` and replaced it with `TargetDedicatedComputeNodes` and `TargetLowPriorityComputeNodes`.
- - `TargetDedicatedComputeNodes` has an alias `TargetDedicated`.
+- Removed `TargetDedicated` and replaced it with `TargetDedicatedComputeNodes` and `TargetLowPriorityComputeNodes`.
+- `TargetDedicatedComputeNodes` has an alias `TargetDedicated`.
 
 ```powershell
 # Old
@@ -175,7 +175,7 @@ New-AzureBatchPool [other parameters] [-TargetDedicatedComputeNodes <Int32>] [-T
 This also impacts: Start-AzureBatchPoolResize
 
 ### **Get-AzureBatchPool**
- - Renamed the `TargetDedicated` and `CurrentDedicated` properties on `PSCloudPool` to `TargetDedicatedComputeNodes` and `CurrentDedicatedComputeNodes`.
+- Renamed the `TargetDedicated` and `CurrentDedicated` properties on `PSCloudPool` to `TargetDedicatedComputeNodes` and `CurrentDedicatedComputeNodes`.
 
 ```powershell
 # Old
@@ -223,8 +223,8 @@ New-AzureBatchJob [other parameters] -PoolInformation $poolInfo
 ```
 
 ### **Get-AzureBatchNodeFile**
- - Removed `Name` and replaced it with `Path`.
- - `Path` has an alias `Name`.
+- Removed `Name` and replaced it with `Path`.
+- `Path` has an alias `Name`.
 
 ```powershell
 # Old
@@ -238,7 +238,7 @@ This also impacts: Get-AzureBatchNodeFileContent, Remove-AzureBatchNodeFile
 
 ### Type **PSNodeFile**
 
- - Renamed the `Name` property on `PSNodeFile` to `Path`.
+- Renamed the `Name` property on `PSNodeFile` to `Path`.
 
 ```powershell
 # Old
@@ -388,7 +388,7 @@ $consumergroup = Get-AzureRmEventHubConsumerGroup <parameters>
 
 ### **Add-AzureRMLogAlertRule**
 - The **Add-AzureRMLogAlertRule** cmdlet has been deprecated
-- After October 1st using this cmdlet will no longer have any effect as this functionality is being transitioned to Activity Log Alerts. Please see https://aka.ms/migratemealerts for more information.
+- After October 1st using this cmdlet will no longer have any effect as this functionality is being transitioned to Activity Log Alerts. Please see <https://aka.ms/migratemealerts> for more information.
 
 ### **Get-AzureRMUsage**
 - The **Get-AzureRMUsage** cmdlet has been deprecated
@@ -623,8 +623,8 @@ Set-AzureRmADUser [other required parameters] -Password $SecureStringVariable
 
 ### **Type NamespaceAttributes**
 - The following properties have been removed
-    - Enabled
-    - Status
+  - Enabled
+  - Status
    
 ```powershell
 # Old
@@ -640,10 +640,10 @@ $namespace = Get-AzureRmServiceBusNamespace <parameters>
 
 ### **Type QueueAttribute**
 - The following properties are marked as obsolete:
-    - EnableBatchedOperations
-    - EntityAvailabilityStatus
-    - IsAnonymousAccessible
-    - SupportOrdering
+  - EnableBatchedOperations
+  - EntityAvailabilityStatus
+  - IsAnonymousAccessible
+  - SupportOrdering
 
 ```powershell
 # Old
@@ -661,12 +661,12 @@ $queue = Get-AzureRmServiceBusQueue <parameters>
    
 ### **Type TopicAttribute**
 - The following properties are marked as obsolete:
-    - Location
-    - IsExpress
-    - IsAnonymousAccessible
-    - FilteringMessagesBeforePublishing
-    - EnableSubscriptionPartitioning
-    - EntityAvailabilityStatus
+  - Location
+  - IsExpress
+  - IsAnonymousAccessible
+  - FilteringMessagesBeforePublishing
+  - EnableSubscriptionPartitioning
+  - EntityAvailabilityStatus
 
 ```powershell
 # Old
@@ -686,10 +686,10 @@ $topic = Get-AzureRmServiceBusTopic <parameters>
    
 ### **Type SubscriptionAttribute**
 - The following properties are marked as obsolete
-    - DeadLetteringOnFilterEvaluationExceptions
-    - EntityAvailabilityStatus
-    - IsReadOnly
-    - Location
+  - DeadLetteringOnFilterEvaluationExceptions
+  - EntityAvailabilityStatus
+  - IsReadOnly
+  - Location
    
 ```powershell
 # Old

@@ -19,7 +19,8 @@ If you encountered a bug, we'd appreciate it if you [file a GitHub issue](https:
 
 If you installed Azure PowerShell using the MSI package or the Web Platform Installer, you must uninstall through the Windows
 system rather than PowerShell.
- 
+
+
 | Platform | Instructions |
 |----------|--------------|
 | Windows 10 | Start > Settings > Apps |

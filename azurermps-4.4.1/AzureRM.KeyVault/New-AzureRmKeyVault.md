@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.KeyVault.dll-Help.xml
 Module Name: AzureRM.KeyVault
 ms.assetid: 4C40DAC9-5C0B-4AFD-9BDB-D407E0B9F701
@@ -27,8 +27,8 @@ The **New-AzureRmKeyVault** cmdlet creates a key vault in the specified resource
 also grants permissions to the currently logged on user to add, remove, or list keys and secrets in
 the key vault.
 
-Note: If you see the error **The subscription is not registered to use namespace
-'Microsoft.KeyVault'** when you try to create your new key vault, run
+Note: If you see the error <strong>The subscription is not registered to use namespace
+'Microsoft.KeyVault'</strong> when you try to create your new key vault, run
 **Register-AzureRmResourceProvider -ProviderNamespace "Microsoft.KeyVault"** and then rerun your
 **New-AzureRmKeyVault** command. For more information, see Register-AzureRmResourceProvider.
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Location
 Specifies the Azure region in which to create the key vault. Use the command Get-AzureLocation
-(https://msdn.microsoft.com/ library/azure/mt589064.aspx) to see your choices. For more
+(<https://msdn.microsoft.com/> library/azure/mt589064.aspx) to see your choices. For more
 information, type `Get-Help Get-AzureLocation`.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -Sku
 Specifies the SKU of the key vault instance. For information about which features are available for
-each SKU, see the Azure Key Vault Pricing website (http://go.microsoft.com/fwlink/?linkid=512521).
+each SKU, see the Azure Key Vault Pricing website (<http://go.microsoft.com/fwlink/?linkid=512521>).
 
 ```yaml
 Type: Microsoft.Azure.Management.KeyVault.Models.SkuName
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

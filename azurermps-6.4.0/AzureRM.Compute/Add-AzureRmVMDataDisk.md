@@ -158,15 +158,15 @@ Specifies whether this cmdlet creates a disk in the virtual machine from a platf
 The acceptable values for this parameter are:
 
 - Attach.
-Specify this option to create a virtual machine from a specialized disk.
-When you specify this option, do not specify the *SourceImageUri* parameter.
-The *VhdUri* is all that is needed in order to tell the Azure platform the location of the virtual hard disk (VHD) to attach as a data disk to the virtual machine.
+  Specify this option to create a virtual machine from a specialized disk.
+  When you specify this option, do not specify the *SourceImageUri* parameter.
+  The *VhdUri* is all that is needed in order to tell the Azure platform the location of the virtual hard disk (VHD) to attach as a data disk to the virtual machine.
 - Empty.
-Specify this to create an empty data disk.
+  Specify this to create an empty data disk.
 - FromImage.
-Specify this option to create a virtual machine from a generalized image or disk.
-When you specify this option, you must specify the *SourceImageUri* parameter also in order to tell the Azure platform the location of the VHD to attach as a data disk.
-The *VhdUri* parameter is used as the location identifying where the data disk VHD will be stored when it is used by the virtual machine.
+  Specify this option to create a virtual machine from a generalized image or disk.
+  When you specify this option, you must specify the *SourceImageUri* parameter also in order to tell the Azure platform the location of the VHD to attach as a data disk.
+  The *VhdUri* parameter is used as the location identifying where the data disk VHD will be stored when it is used by the virtual machine.
 
 ```yaml
 Type: String
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Sql.dll-Help.xml
 Module Name: AzureRM.Sql
 ms.assetid: 3D4822DD-736B-42DF-8D9A-1CB23FEF052E
@@ -89,11 +89,11 @@ The default value is SQL if no authentication type is set.
 The acceptable values for this parameter are:
 
 - Sql.
-SQL authentication.
-Set the *AdministratorLogin* and *AdministratorLoginPassword* to the SQL administrator username and password. 
+  SQL authentication.
+  Set the *AdministratorLogin* and *AdministratorLoginPassword* to the SQL administrator username and password. 
 - ADPassword.
-Azure Active Directory authentication.
-Set *AdministratorLogin* and *AdministratorLoginPassword* to the Azure AD administrator username and password.
+  Azure Active Directory authentication.
+  Set *AdministratorLogin* and *AdministratorLoginPassword* to the Azure AD administrator username and password.
 
 This parameter is only available on SQL Database V12 servers.
 
@@ -176,9 +176,9 @@ Specifies the type of access key for the storage account.
 The acceptable values for this parameter are:
 
 - StorageAccessKey.
-This value uses a storage account key. 
+  This value uses a storage account key. 
 - SharedAccessKey.
-This value uses a Shared Access Signature (SAS) key.
+  This value uses a Shared Access Signature (SAS) key.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.StorageKeyType
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

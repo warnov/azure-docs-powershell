@@ -12,7 +12,7 @@ ms.date: 03/30/2017
 # Querying for Azure resources
 
 Querying in PowerShell can be completed by using built-in cmdlets. In
-PowerShell, cmdlet names take the form of **_Verb-Noun_**. The cmdlets using the verb **_Get_** are
+PowerShell, cmdlet names take the form of ***Verb-Noun***. The cmdlets using the verb ***Get*** are
 the query cmdlets. The cmdlet nouns are the types of Azure resources that are acted upon by the
 cmdlet verbs.
 

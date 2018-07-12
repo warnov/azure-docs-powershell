@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.IotHub.dll-Help.xml
 Module Name: AzureRM.IotHub
 online version:
@@ -24,7 +24,7 @@ New-AzureRmIotHubImportDevices [-ResourceGroupName] <String> [-Name] <String> [-
 Creates a new import devices job for the IotHub.
 This will import all the devices to the IotHub from the specified container. 
 Refer to the following article on how to generate the SAS URI.
-https://azure.microsoft.com/en-us/documentation/articles/iot-hub-bulk-identity-mgmt/ .
+<https://azure.microsoft.com/en-us/documentation/articles/iot-hub-bulk-identity-mgmt/> .
 
 ## EXAMPLES
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

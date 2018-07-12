@@ -32,7 +32,7 @@ Remove-AzureRmDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-The **Remove-AzureRmDataFactoryV2Trigger** cmdlet removes a trigger from a data factory. If the _Force_ parameter is specified, the cmdlet doesn't prompt before removing the trigger.
+The **Remove-AzureRmDataFactoryV2Trigger** cmdlet removes a trigger from a data factory. If the *Force* parameter is specified, the cmdlet doesn't prompt before removing the trigger.
 
 ## EXAMPLES
 

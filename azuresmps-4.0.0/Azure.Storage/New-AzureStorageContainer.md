@@ -114,13 +114,13 @@ Anonymous users can read blobs in a publicly available container without authent
 The acceptable values for this parameter are:
 
 - Container.
-Provides full read access to a container and its blobs.
-Clients can enumerate blobs in the container through anonymous request, but cannot enumerate containers in the storage account. 
+  Provides full read access to a container and its blobs.
+  Clients can enumerate blobs in the container through anonymous request, but cannot enumerate containers in the storage account. 
 - Blob.
-Provides read access to blob data throughout a container through anonymous request, but does not provide access to container data.
-Clients cannot enumerate blobs in the container by using anonymous request. 
+  Provides read access to blob data throughout a container through anonymous request, but does not provide access to container data.
+  Clients cannot enumerate blobs in the container by using anonymous request. 
 - Off.
-Which restricts access to only the storage account owner.
+  Which restricts access to only the storage account owner.
 
 ```yaml
 Type: BlobContainerPublicAccessType
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

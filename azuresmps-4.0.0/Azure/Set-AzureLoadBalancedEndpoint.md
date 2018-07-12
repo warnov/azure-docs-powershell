@@ -183,11 +183,11 @@ Specifies the load balancer distribution algorithm.
 Valid values are: 
 
 - sourceIP.
-A two tuple affinity: Source IP, Destination IP 
+  A two tuple affinity: Source IP, Destination IP 
 - sourceIPProtocol.
-A three tuple affinity: Source IP, Destination IP, Protocol 
+  A three tuple affinity: Source IP, Destination IP, Protocol 
 - none.
-A five tuple affinity: Source IP, Source Port, Destination IP, Destination Port, Protocol 
+  A five tuple affinity: Source IP, Source Port, Destination IP, Destination Port, Protocol 
 
 The default value is none.
 
@@ -392,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

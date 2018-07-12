@@ -35,26 +35,26 @@ Specify a start time and an end time to define a range of data slices to view.
 The status of a data slice is one of the following values: 
 
 - PendingExecution.
-Data processing has not started. 
+  Data processing has not started. 
 - InProgress.
-Data processing is in progress. 
+  Data processing is in progress. 
 - Ready.
-Data processing is completed.
-The data slice is ready for dependent slices to consume it. 
+  Data processing is completed.
+  The data slice is ready for dependent slices to consume it. 
 - Failed.
-The run that produces the slice failed. 
+  The run that produces the slice failed. 
 - Skip.
-Data Factory skips processing of the slice. 
+  Data Factory skips processing of the slice. 
 - Retry.
-Data Factory retries the run that produces the slice. 
+  Data Factory retries the run that produces the slice. 
 - Timed Out.
-Data processing has timed out. 
+  Data processing has timed out. 
 - PendingValidation.
-Data slice is waiting for validation before it is processed. 
+  Data slice is waiting for validation before it is processed. 
 - Retry Validation.
-Data Factory retries the validation of the slice. 
+  Data Factory retries the validation of the slice. 
 - Failed Validation.
-Validation of the slice failed.
+  Validation of the slice failed.
 
 For each of the slices, you can see more information about the run that produces the slice by using the Get-AzureRmDataFactoryRun cmdlet.
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

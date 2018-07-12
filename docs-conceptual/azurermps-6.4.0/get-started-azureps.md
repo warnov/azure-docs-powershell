@@ -49,7 +49,7 @@ You can also install Azure PowerShell and use it locally in a PowerShell session
 Sign on interactively:
 
 1. Type `Connect-AzureRmAccount`. You will get dialog box asking for your Azure credentials. Option
-  '-Environment' can let you authenticate for Azure China or Azure Germany.
+   '-Environment' can let you authenticate for Azure China or Azure Germany.
 
    e.g. Connect-AzureRmAccount -Environment AzureChinaCloud
 

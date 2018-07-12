@@ -68,7 +68,7 @@ You are installing the modules from an untrusted repository. If you trust this r
 its InstallationPolicy value by running the Set-PSRepository cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
 ```
 
 Answer 'Yes' or 'Yes to All' to continue with the installation.
@@ -103,6 +103,7 @@ For more information about using Azure PowerShell, see the following articles:
 ## Frequently asked questions
 
 ### How to get PowerShellGet
+
 
 |OS Version|Install instructions|
 |---|---|
@@ -140,10 +141,10 @@ available on this system. This module 'Azure.Storage' may override the existing 
 still want to install this module 'Azure.Storage', use -AllowClobber parameter.
 
 At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1772 char:21
-+ ...          $null = PackageManagement\Install-Package @PSBoundParameters
-+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
-    + FullyQualifiedErrorId : CommandAlreadyAvailable,Validate-ModuleCommandAlreadyAvailable,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
+    + FullyQualifiedErrorId : CommandAlreadyAvailable,Validate-ModuleCommandAlreadyAvailable,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
 ```
 
 As the error message states, you need to use the -AllowClobber parameter to install the module. Use
@@ -178,9 +179,9 @@ Import-Module -Name AzureRM -RequiredVersion 1.2.9
 
 > [!NOTE]
 > Version 2.1.0 and version 1.2.6 are the first module versions designed to be installed and used
-side by side. When loading an earlier version of the Azure PowerShell, incompatible versions of the
-**AzureRM.Profile** module are loaded. This results in the cmdlets prompting you to log in whenever
-you execute a cmdlet.
+> side by side. When loading an earlier version of the Azure PowerShell, incompatible versions of the
+> **AzureRM.Profile** module are loaded. This results in the cmdlets prompting you to log in whenever
+> you execute a cmdlet.
 
 ### Other installation methods
 

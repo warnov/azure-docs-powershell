@@ -88,11 +88,11 @@ This parameter defaults to SQL if no authentication type is set.
 The acceptable values for this parameter are:
 
 - SQL.
-SQL authentication.
-Set the *AdministratorLogin* and *AdministratorLoginPassword* parameters to the SQL administrator username and password. 
+  SQL authentication.
+  Set the *AdministratorLogin* and *AdministratorLoginPassword* parameters to the SQL administrator username and password. 
 - ADPassword.
-Azure Active Directory authentication.
-Set *AdministratorLogin* and *AdministratorLoginPassword* to the Azure Active Directory administrator username and password.
+  Azure Active Directory authentication.
+  Set *AdministratorLogin* and *AdministratorLoginPassword* to the Azure Active Directory administrator username and password.
 
 This parameter is only available on SQL Database V12 servers.
 
@@ -244,9 +244,9 @@ Specifies the type of access key for the storage account.
 The acceptable values for this parameter are:
 
 - StorageAccessKey.
-Uses the storage account key. 
+  Uses the storage account key. 
 - SharedAccessKey.
-Uses the Shared Access Signature (SAS) key.
+  Uses the Shared Access Signature (SAS) key.
 
 ```yaml
 Type: StorageKeyType
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

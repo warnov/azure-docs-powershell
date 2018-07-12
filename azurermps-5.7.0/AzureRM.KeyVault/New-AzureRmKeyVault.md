@@ -26,8 +26,8 @@ The **New-AzureRmKeyVault** cmdlet creates a key vault in the specified resource
 also grants permissions to the currently logged on user to add, remove, or list keys and secrets in
 the key vault.
 
-Note: If you see the error **The subscription is not registered to use namespace
-'Microsoft.KeyVault'** when you try to create your new key vault, run
+Note: If you see the error <strong>The subscription is not registered to use namespace
+'Microsoft.KeyVault'</strong> when you try to create your new key vault, run
 **Register-AzureRmResourceProvider -ProviderNamespace "Microsoft.KeyVault"** and then rerun your
 **New-AzureRmKeyVault** command. For more information, see Register-AzureRmResourceProvider.
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Specifies the SKU of the key vault instance. For information about which features are available for each SKU, see the Azure Key Vault Pricing website (https://go.microsoft.com/fwlink/?linkid=512521).
+Specifies the SKU of the key vault instance. For information about which features are available for each SKU, see the Azure Key Vault Pricing website (<https://go.microsoft.com/fwlink/?linkid=512521>).
 
 ```yaml
 Type: SkuName
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

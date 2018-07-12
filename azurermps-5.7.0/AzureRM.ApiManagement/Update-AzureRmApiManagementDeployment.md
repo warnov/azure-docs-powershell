@@ -238,12 +238,12 @@ Specifies the virtual network Type of the API Management deployment.
 The acceptable values for this parameter are:
 
 - None.
-The API Management deployment is not part of any Virtual Network.
-This is the default value. 
+  The API Management deployment is not part of any Virtual Network.
+  This is the default value. 
 - External.
-The API Management deployment has an external facing virtual address. 
+  The API Management deployment has an external facing virtual address. 
 - Internal.
-The API Management deployment has an intranet facing virtual address.
+  The API Management deployment has an intranet facing virtual address.
 
 ```yaml
 Type: PsApiManagementVpnType
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

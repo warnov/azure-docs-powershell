@@ -187,11 +187,11 @@ This parameter is required when you create a new key. If you import a key by usi
 *KeyFilePath* parameter, this parameter is optional:
 
 - If you do not specify this parameter, and this cmdlet imports a key that has .byok file name
-extension, it imports that key as an HSM-protected key. The cmdlet cannot import that key as
-software-protected key.
+  extension, it imports that key as an HSM-protected key. The cmdlet cannot import that key as
+  software-protected key.
 
 - If you do not specify this parameter, and this cmdlet imports a key that has a .pfx file name
-extension, it imports the key as a software-protected key.
+  extension, it imports the key as a software-protected key.
 
 ```yaml
 Type: String
@@ -291,10 +291,10 @@ Specifies the path of a local file that contains key material that this cmdlet i
 The valid file name extensions are .byok and .pfx.
 
 - If the file is a .byok file, the key is automatically protected by HSMs after the import and you
-cannot override this default.
+  cannot override this default.
 
 - If the file is a .pfx file, the key is automatically protected by software after the import. To
-override this default, set the *Destination* parameter to HSM so that the key is HSM-protected.
+  override this default, set the *Destination* parameter to HSM so that the key is HSM-protected.
 
 When you specify this parameter, the *Destination* parameter is optional.
 
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

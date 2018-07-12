@@ -51,13 +51,13 @@ PS C:\> Get-AzureKeyVaultSecret -VaultName $kv.VaultName -Name $sas.Sid.Substrin
 ```
 
 Sets an account SAS definition 'accountsas' on a KeyVault-managed storage account 'mysa' in vault 'mykv'. Specifically, the sequence above performs the following:
-  - gets a (pre-existing) storage account
-  - gets a (pre-existing) key vault
-  - adds a KeyVault-managed storage account to the vault, setting Key1 as the active key, and with a regeneration period of 180 days
-  - sets a storage context for the specified storage account, with Key1
-  - creates an account SAS token for services Blob, File, Table and Queue, for resource types Service, Container and Object, with all permissions, over https and with the specified start and end dates
-  - sets a KeyVault-managed storage SAS definition in the vault, with the template uri as the SAS token created above, of SAS type 'account' and valid for 30 days
-  - retrieves the actual access token from the KeyVault secret corresponding to the SAS definition
+- gets a (pre-existing) storage account
+- gets a (pre-existing) key vault
+- adds a KeyVault-managed storage account to the vault, setting Key1 as the active key, and with a regeneration period of 180 days
+- sets a storage context for the specified storage account, with Key1
+- creates an account SAS token for services Blob, File, Table and Queue, for resource types Service, Container and Object, with all permissions, over https and with the specified start and end dates
+- sets a KeyVault-managed storage SAS definition in the vault, with the template uri as the SAS token created above, of SAS type 'account' and valid for 30 days
+- retrieves the actual access token from the KeyVault secret corresponding to the SAS definition
 
 ## PARAMETERS
 
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

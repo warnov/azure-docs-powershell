@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Insights.dll-Help.xml
 Module Name: AzureRM.Insights
 ms.assetid: 11A521DF-E77C-4D6F-A2D9-1C2CF8972F57
@@ -27,7 +27,7 @@ Add-AzureRmLogAlertRule [-TargetResourceGroup <String>] [-TargetResourceId <Stri
 The **Add-AzureRmLogAlertRule** cmdlet adds or replaces an event alert rule.
 The added rule is associated with a resource group and has a name.
 
-As announced in previous releases: **Add-AzureRMLogAlertRule cmdlet will be deprecated in a future release.** After October 1st 2017 using this cmdlet will no longer have any effect as this functionality is being transitioned to Activity Log Alerts. Please see **_https://aka.ms/migratemealerts_** for more information.
+As announced in previous releases: **Add-AzureRMLogAlertRule cmdlet will be deprecated in a future release.** After October 1st 2017 using this cmdlet will no longer have any effect as this functionality is being transitioned to Activity Log Alerts. Please see ***<https://aka.ms/migratemealerts>*** for more information.
 
 ## EXAMPLES
 
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

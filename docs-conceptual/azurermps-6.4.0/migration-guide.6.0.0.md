@@ -15,9 +15,10 @@ This document serves as both a breaking change notification and migration guide 
 ## Table of Contents
 
 - [General breaking changes](#general-breaking-changes)
-    - [Minimum PowerShell version required bumped to 5.0](#minimum-powershell-version-required-bumped-to-50)
-    - [Context autosaved enabled by default](#context-autosaved-enabled-by-default)
-    - [Removal of Tags alias](#removal-of-tags-alias)
+  - [Minimum PowerShell version required bumped to 5.0](#minimum-powershell-version-required-bumped-to-50)
+  - [Context autosaved enabled by default](#context-autosaved-enabled-by-default)
+  - [Removal of Tags alias](#removal-of-tags-alias)
+
 - [Breaking changes to AzureRM.Compute cmdlets](#breaking-changes-to-azurermcompute-cmdlets)
 - [Breaking changes to AzureRM.DataLakeStore cmdlets](#breaking-changes-to-azurermdatalakestore-cmdlets)
 - [Breaking changes to AzureRM.Dns cmdlets](#breaking-changes-to-azurermdns-cmdlets)
@@ -28,22 +29,22 @@ This document serves as both a breaking change notification and migration guide 
 - [Breaking changes to AzureRM.Resources cmdlets](#breaking-changes-to-azurermresources-cmdlets)
 - [Breaking changes to AzureRM.Storage cmdlets](#breaking-changes-to-azurermstorage-cmdlets)
 - [Removed modules](#removed-modules)
-    - [`AzureRM.ServerManagement`](#azurermservermanagement)
-    - [`AzureRM.SiteRecovery`](#azurermsiterecovery)
+  - [`AzureRM.ServerManagement`](#azurermservermanagement)
+  - [`AzureRM.SiteRecovery`](#azurermsiterecovery)
 
 ## General breaking changes
 
 ### Minimum PowerShell version required bumped to 5.0
 
-Previously, Azure PowerShell required _at least_ version 3.0 of PowerShell to run any cmdlet. Moving forward, this requirement will be raised to version 5.0 of PowerShell. For information on upgrading to PowerShell 5.0, please see [this table](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell).
+Previously, Azure PowerShell required *at least* version 3.0 of PowerShell to run any cmdlet. Moving forward, this requirement will be raised to version 5.0 of PowerShell. For information on upgrading to PowerShell 5.0, please see [this table](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell).
 
 ### Context autosave enabled by default
 
 Context autosave is the storage of Azure sign in information that can be used between new and different PowerShell sessions. For more information on context autosave, please see [this document](https://docs.microsoft.com/en-us/powershell/azure/context-persistence).
 
-Previously by default, context autosave was disabled, which meant the user's Azure authentication information was not stored between sessions until they ran the `Enable-AzureRmContextAutosave` cmdlet to turn on context persistence. Moving forward, context autosave will be enabled by default, which means that users _with no saved context autosave settings_ will have their context stored the next time they sign in. Users can opt out of this functionality by using the `Disable-AzureRmContextAutosave` cmdlet.
+Previously by default, context autosave was disabled, which meant the user's Azure authentication information was not stored between sessions until they ran the `Enable-AzureRmContextAutosave` cmdlet to turn on context persistence. Moving forward, context autosave will be enabled by default, which means that users *with no saved context autosave settings* will have their context stored the next time they sign in. Users can opt out of this functionality by using the `Disable-AzureRmContextAutosave` cmdlet.
 
-_Note_: users that previously disabled context autosave or users with context autosave enabled and existing contexts will not be affected by this change
+*Note*: users that previously disabled context autosave or users with context autosave enabled and existing contexts will not be affected by this change
 
 ### Removal of Tags alias
 
@@ -145,7 +146,7 @@ New-AzureRmAvailabilitySet -ResourceGroupName "MyRG" -Name "MyAvailabilitySet" -
 
 **Set-AzureRmVMAEMExtension**
 - The parameter `DisableWAD` was removed
-    -  Windows Azure Diagnostics is disabled by default
+  - Windows Azure Diagnostics is disabled by default
 
 **Set-AzureRmVMDataDisk**
 - The accepted values for parameter `StorageAccountType` changed from `StandardLRS` and `PremiumLRS` to `Standard_LRS` and `Premium_LRS`, respectively
@@ -249,8 +250,8 @@ Remove-AzureRmDataLakeStoreItem -Account "ContosoADL" -path /myFolder -Recurse
 - The cmdlet no longer accepts individual parameters that compose the access token; instead, the cmdlet replaces explicit token parameters, such as `Service` or `Permissions`, with a generic `TemplateUri` parameter, corresponding to a sample access token defined elsewhere (presumably using Storage PowerShell cmdlets, or composed manually according to the Storage documentation.) The cmdlet retains the `ValidityPeriod` parameter.
 
 For more information on composing shared access tokens for Azure Storage, please refer to the documentation pages, respectively:
-- [Constructing a Service SAS] (https://docs.microsoft.com/en-us/rest/api/storageservices/Constructing-a-Service-SAS)
-- [Constructing an Account SAS] (https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-an-account-sas)
+- [Constructing a Service SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/Constructing-a-Service-SAS)
+- [Constructing an Account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-an-account-sas)
 
 ```powershell
 # Old
@@ -278,79 +279,79 @@ $sas=Set-AzureKeyVaultManagedStorageSasDefinition -AccountName $sa.StorageAccoun
 
 **General**
 - The `ValueFromPipelineByPropertyName` property was removed from all cmdlets where piping by `InputObject` was enabled.  The cmdlets affected are:
-    - `Add-AzureKeyVaultCertificate`
-    - `Add-AzureKeyVaultCertificateContact`
-    - `Add-AzureKeyVaultKey`
-    - `Backup-AzureKeyVaultKey`
-    - `Backup-AzureKeyVaultSecret`
-    - `Get-AzureKeyVaultCertficate`
-    - `Get-AzureKeyVaultCertificateContact`
-    - `Get-AzureKeyVaultCertificateIssuer`
-    - `Get-AzureKeyVaultCertificateOperation`
-    - `Get-AzureKeyVaultCertificatePolicy`
-    - `Get-AzureKeyVaultKey`
-    - `Get-AzureKeyVaultManagedStorageAccount`
-    - `Get-AzureKeyVaultManagedStorageSasDefinition`
-    - `Get-AzureKeyVaultSecret`
-    - `Remove-AzureRmKeyVault`
-    - `Remove-AzureRmKeyVaultAccessPolicy`
-    - `Remove-AzureKeyVaultCertificate`
-    - `Remove-AzureKeyVaultCertificateContact`
-    - `Remove-AzureKeyVaultCertificateIssuer`
-    - `Remove-AzureKeyVaultCertificateOperation`
-    - `Remove-AzureKeyVaultKey`
-    - `Remove-AzureKeyVaultManagedStorageAccount`
-    - `Remove-AzureKeyVaultManagedStorageSasDefinition`
-    - `Remove-AzureKeyVaultSecret`
-    - `Restore-AzureKeyVaultKey`
-    - `Restore-AzureKeyVaultSecret`
-    - `Set-AzureRmKeyVaultAccessPolicy`
-    - `Set-AzureKeyVaultCertificateAttribute`
-    - `Set-AzureKeyVaultCertificateIssuer`
-    - `Set-AzureKeyVaultCertificatePolicy`
-    - `Set-AzureKeyVaultKeyAttribute`
-    - `Set-AzureKeyVaultManagedStorageSasDefinition`
-    - `Set-AzureKeyVaultSecret`
-    - `Set-AzureKeyVaultSecretAttribute`
-    - `Stop-AzureKeyVaultCertificateOperation`
-    - `Undo-AzureKeyVaultCertificateRemoval`
-    - `Undo-AzureKeyVaultKeyRemoval`
-    - `Undo-AzureRmKeyVaultRemoval`
-    - `Undo-AzureKeyVaultSecretRemoval`
-    - `Update-AzureKeyVaultManagedStorageAccount`
-    - `Update-AzureKeyVaultManagedStorageAccountKey`
+  - `Add-AzureKeyVaultCertificate`
+  - `Add-AzureKeyVaultCertificateContact`
+  - `Add-AzureKeyVaultKey`
+  - `Backup-AzureKeyVaultKey`
+  - `Backup-AzureKeyVaultSecret`
+  - `Get-AzureKeyVaultCertficate`
+  - `Get-AzureKeyVaultCertificateContact`
+  - `Get-AzureKeyVaultCertificateIssuer`
+  - `Get-AzureKeyVaultCertificateOperation`
+  - `Get-AzureKeyVaultCertificatePolicy`
+  - `Get-AzureKeyVaultKey`
+  - `Get-AzureKeyVaultManagedStorageAccount`
+  - `Get-AzureKeyVaultManagedStorageSasDefinition`
+  - `Get-AzureKeyVaultSecret`
+  - `Remove-AzureRmKeyVault`
+  - `Remove-AzureRmKeyVaultAccessPolicy`
+  - `Remove-AzureKeyVaultCertificate`
+  - `Remove-AzureKeyVaultCertificateContact`
+  - `Remove-AzureKeyVaultCertificateIssuer`
+  - `Remove-AzureKeyVaultCertificateOperation`
+  - `Remove-AzureKeyVaultKey`
+  - `Remove-AzureKeyVaultManagedStorageAccount`
+  - `Remove-AzureKeyVaultManagedStorageSasDefinition`
+  - `Remove-AzureKeyVaultSecret`
+  - `Restore-AzureKeyVaultKey`
+  - `Restore-AzureKeyVaultSecret`
+  - `Set-AzureRmKeyVaultAccessPolicy`
+  - `Set-AzureKeyVaultCertificateAttribute`
+  - `Set-AzureKeyVaultCertificateIssuer`
+  - `Set-AzureKeyVaultCertificatePolicy`
+  - `Set-AzureKeyVaultKeyAttribute`
+  - `Set-AzureKeyVaultManagedStorageSasDefinition`
+  - `Set-AzureKeyVaultSecret`
+  - `Set-AzureKeyVaultSecretAttribute`
+  - `Stop-AzureKeyVaultCertificateOperation`
+  - `Undo-AzureKeyVaultCertificateRemoval`
+  - `Undo-AzureKeyVaultKeyRemoval`
+  - `Undo-AzureRmKeyVaultRemoval`
+  - `Undo-AzureKeyVaultSecretRemoval`
+  - `Update-AzureKeyVaultManagedStorageAccount`
+  - `Update-AzureKeyVaultManagedStorageAccountKey`
 
 - `ConfirmImpact` levels were removed from all cmdlets.  The cmdlets affected are:
-    - `Remove-AzureRmKeyVault`
-    - `Remove-AzureKeyVaultCertificate`
-    - `Remove-AzureKeyVaultCertificateIssuer`
-    - `Remove-AzureKeyVaultCertificateOperation`
-    - `Remove-AzureKeyVaultKey`
-    - `Remove-AzureKeyVaultManagedStorageAccount`
-    - `Remove-AzureKeyVaultManagedStorageSasDefinition`
-    - `Remove-AzureKeyVaultSecret`
-    - `Stop-AzureKeyVaultCertificateOperation`
-    - `Update-AzureKeyVaultManagedStorageAccountKey`
+  - `Remove-AzureRmKeyVault`
+  - `Remove-AzureKeyVaultCertificate`
+  - `Remove-AzureKeyVaultCertificateIssuer`
+  - `Remove-AzureKeyVaultCertificateOperation`
+  - `Remove-AzureKeyVaultKey`
+  - `Remove-AzureKeyVaultManagedStorageAccount`
+  - `Remove-AzureKeyVaultManagedStorageSasDefinition`
+  - `Remove-AzureKeyVaultSecret`
+  - `Stop-AzureKeyVaultCertificateOperation`
+  - `Update-AzureKeyVaultManagedStorageAccountKey`
 
 - The `IKeyVaultDataServiceClient` was updated so all Certificate operations return PSTypes instead of SDK types. This includes:
-    - `SetCertificateContacts`
-    - `GetCertificateContacts`
-    - `GetCertificate`
-    - `GetDeletedCertificate`
-    - `MergeCertificate`
-    - `ImportCertificate`
-    - `DeleteCertificate`
-    - `RecoverCertificate`
-    - `EnrollCertificate`
-    - `UpdateCertificate`
-    - `GetCertificateOperation`
-    - `DeleteCertificateOperation`
-    - `CancelCertificateOperation`
-    - `GetCertificatePolicy`
-    - `UpdateCertificatePolicy`
-    - `GetCertificateIssuer`
-    - `SetCertificateIssuer`
-    - `DeleteCertificateIssuer`
+  - `SetCertificateContacts`
+  - `GetCertificateContacts`
+  - `GetCertificate`
+  - `GetDeletedCertificate`
+  - `MergeCertificate`
+  - `ImportCertificate`
+  - `DeleteCertificate`
+  - `RecoverCertificate`
+  - `EnrollCertificate`
+  - `UpdateCertificate`
+  - `GetCertificateOperation`
+  - `DeleteCertificateOperation`
+  - `CancelCertificateOperation`
+  - `GetCertificatePolicy`
+  - `UpdateCertificatePolicy`
+  - `GetCertificateIssuer`
+  - `SetCertificateIssuer`
+  - `DeleteCertificateIssuer`
 
 ## Breaking changes to AzureRM.Network cmdlets
 
@@ -453,67 +454,69 @@ The Server Management Tools service was [retired last year](https://blogs.techne
 
 The `AzureRM.SiteRecovery` module is being superseded by `AzureRM.RecoveryServices.SiteRecovery`, which is a functional superset of the `AzureRM.SiteRecovery` module and includes a new set of equivalent cmdlets. The full list of mappings from old to new cmdlets can be found below:
 
-| Deprecated cmdlet                                        | Equivalent cmdlet                                                | Aliases                                  |
-|----------------------------------------------------------|------------------------------------------------------------------|------------------------------------------|
-| `Edit-AzureRmSiteRecoveryRecoveryPlan`                   | `Edit-AzureRmRecoveryServicesAsrRecoveryPlan`                    | `Edit-ASRRecoveryPlan`                   |
-| `Get-AzureRmSiteRecoveryFabric`                          | `Get-AzureRmRecoveryServicesAsrFabric`                           | `Get-ASRFabric`                          |
-| `Get-AzureRmSiteRecoveryJob`                             | `Get-AzureRmRecoveryServicesAsrJob`                              | `Get-ASRJob`                             |
-| `Get-AzureRmSiteRecoveryNetwork`                         | `Get-AzureRmRecoveryServicesAsrNetwork`                          | `Get-ASRNetwork`                         |
-| `Get-AzureRmSiteRecoveryNetworkMapping`                  | `Get-AzureRmRecoveryServicesAsrNetworkMapping`                   | `Get-ASRNetworkMapping`                  |
-| `Get-AzureRmSiteRecoveryPolicy`                          | `Get-AzureRmRecoveryServicesAsrPolicy`                           | `Get-ASRPolicy`                          |
-| `Get-AzureRmSiteRecoveryProtectableItem`                 | `Get-AzureRmRecoveryServicesAsrProtectableItem`                  | `Get-ASRProtectableItem`                 |
-| `Get-AzureRmSiteRecoveryProtectionContainer`             | `Get-AzureRmRecoveryServicesAsrProtectionContainer`              | `Get-ASRProtectionContainer`             |
-| `Get-AzureRmSiteRecoveryProtectionContainerMapping`      | `Get-AzureRmRecoveryServicesAsrProtectionContainerMapping`       | `Get-ASRProtectionContainerMapping`      |
-| `Get-AzureRmSiteRecoveryProtectionEntity`                | `Get-AzureRmRecoveryServicesAsrProtectableItem`                  | `Get-ASRProtectableItem`                 |
-| `Get-AzureRmSiteRecoveryRecoveryPlan`                    | `Get-AzureRmRecoveryServicesAsrRecoveryPlan`                     | `Get-ASRRecoveryPlan`                    |
-| `Get-AzureRmSiteRecoveryRecoveryPoint`                   | `Get-AzureRmRecoveryServicesAsrRecoveryPoint`                    | `Get-ASRRecoveryPoint`                   |
-| `Get-AzureRmSiteRecoveryReplicationProtectedItem`        | `Get-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `Get-ASRReplicationProtectedItem`        |
-| `Get-AzureRmSiteRecoveryServer`                          | `Get-AzureRmRecoveryServicesAsrServicesProvider`                 | `Get-ASRServicesProvider`                |
-| `Get-AzureRmSiteRecoveryServicesProvider`                | `Get-AzureRmRecoveryServicesAsrServicesProvider`                 | `Get-ASRServicesProvider`                |
-| `Get-AzureRmSiteRecoverySite`                            | `Get-AzureRmRecoveryServicesAsrFabric`                           | `Get-ASRFabric`                          |
-| `Get-AzureRmSiteRecoveryStorageClassification`           | `Get-AzureRmRecoveryServicesAsrStorageClassification`            | `Get-ASRStorageClassification`           |
-| `Get-AzureRmSiteRecoveryStorageClassificationMapping`    | `Get-AzureRmRecoveryServicesAsrStorageClassificationMapping`     | `Get-ASRStorageClassificationMapping`    |
-| `Get-AzureRmSiteRecoveryVault`                           | `Get-AzureRmRecoveryServicesVault`                               |                                          |
-| `Get-AzureRmSiteRecoveryVaultSettings`                   | `Get-AzureRmRecoveryServicesAsrVaultContext`                     |                                          |
-| `Get-AzureRmSiteRecoveryVaultSettingsFile`               | `Get-AzureRmRecoveryServicesVaultSettingsFile`                   |                                          |
-| `Get-AzureRmSiteRecoveryVM`                              | `Get-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `Get-ASRReplicationProtectedItem`        |
-| `Import-AzureRmSiteRecoveryVaultSettingsFile`            | `Import-AzureRmRecoveryServicesAsrVaultSettingsFile`             |                                          |
-| `New-AzureRmSiteRecoveryFabric`                          | `New-AzureRmRecoveryServicesAsrFabric`                           | `New-ASRFabric`                          |
-| `New-AzureRmSiteRecoveryNetworkMapping`                  | `New-AzureRmRecoveryServicesAsrNetworkMapping`                   | `New-ASRNetworkMapping`                  |
-| `New-AzureRmSiteRecoveryPolicy`                          | `New-AzureRmRecoveryServicesAsrPolicy`                           | `New-ASRPolicy`                          |
-| `New-AzureRmSiteRecoveryProtectionContainerMapping`      | `New-AzureRmRecoveryServicesAsrProtectionContainerMapping`       | `New-ASRProtectionContainerMapping`      |
-| `New-AzureRmSiteRecoveryRecoveryPlan`                    | `New-AzureRmRecoveryServicesAsrRecoveryPlan`                     | `New-ASRRecoveryPlan`                    |
-| `New-AzureRmSiteRecoveryReplicationProtectedItem`        | `New-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `New-ASRReplicationProtectedItem`        |
-| `New-AzureRmSiteRecoverySite`                            | `New-AzureRmRecoveryServicesAsrFabric`                           | `New-ASRFabric`                          |
-| `New-AzureRmSiteRecoveryStorageClassificationMapping`    | `New-AzureRmRecoveryServicesAsrStorageClassificationMapping`     | `New-ASRStorageClassificationMapping`    |
-| `New-AzureRmSiteRecoveryVault`                           | `New-AzureRmRecoveryServicesVault`                               |                                          |
-| `Remove-AzureRmSiteRecoveryFabric`                       | `Remove-AzureRmRecoveryServicesAsrFabric`                        | `Remove-ASRFabric`                       |
-| `Remove-AzureRmSiteRecoveryNetworkMapping`               | `Remove-AzureRmRecoveryServicesAsrNetworkMapping`                | `Remove-ASRNetworkMapping`               |
-| `Remove-AzureRmSiteRecoveryPolicy`                       | `Remove-AzureRmRecoveryServicesAsrPolicy`                        | `Remove-ASRPolicy`                       |
-| `Remove-AzureRmSiteRecoveryProtectionContainerMapping`   | `Remove-AzureRmRecoveryServicesAsrProtectionContainerMapping`    | `Remove-ASRProtectionContainerMapping`   |
-| `Remove-AzureRmSiteRecoveryRecoveryPlan`                 | `Remove-AzureRmRecoveryServicesAsrRecoveryPlan`                  | `Remove-ASRRecoveryPlan`                 |
-| `Remove-AzureRmSiteRecoveryReplicationProtectedItem`     | `Remove-AzureRmRecoveryServicesAsrReplicationProtectedItem`      | `Remove-ASRReplicationProtectedItem`     |
-| `Remove-AzureRmSiteRecoveryServer`                       | `Remove-AzureRmRecoveryServicesAsrServicesProvider`              |                                          |
-| `Remove-AzureRmSiteRecoveryServicesProvider`             | `Remove-AzureRmRecoveryServicesAsrServicesProvider`              | `Remove-ASRServicesProvider`             |
-| `Remove-AzureRmSiteRecoverySite`                         | `Remove-AzureRmRecoveryServicesAsrFabric`                        | `Remove-ASRFabric`                       |
-| `Remove-AzureRmSiteRecoveryStorageClassificationMapping` | `Remove-AzureRmRecoveryServicesAsrStorageClassificationMapping`  | `Remove-ASRStorageClassificationMapping` |
-| `Remove-AzureRmSiteRecoveryVault`                        | `Remove-AzureRmRecoveryServicesVault`                            |                                          |
-| `Restart-AzureRmSiteRecoveryJob`                         | `Restart-AzureRmRecoveryServicesAsrJob`                          | `Restart-ASRJob`                         |
-| `Resume-AzureRmSiteRecoveryJob`                          | `Resume-AzureRmRecoveryServicesAsrJob`                           | `Resume-ASRJob`                          |
-| `Set-AzureRmSiteRecoveryProtectionEntity`                | `New-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `New-ASRReplicationProtectedItem`        |
-| `Set-AzureRmSiteRecoveryReplicationProtectedItem`        | `Set-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `Set-ASRReplicationProtectedItem`        |
-| `Set-AzureRmSiteRecoveryVaultSettings`                   | `Set-AzureRmRecoveryServicesAsrVaultContext`                     | `Set-ASRVaultContext`                    |
-| `Set-AzureRmSiteRecoveryVM`                              | `Set-AzureRmRecoveryServicesAsrReplicationProtectedItem`         | `Set-ASRReplicationProtectedItem`        |
-| `Start-AzureRmSiteRecoveryApplyRecoveryPoint`            | `Start-AzureRmRecoveryServicesAsrApplyRecoveryPoint`             | `Start-ASRApplyRecoveryPoint`            |
-| `Start-AzureRmSiteRecoveryCommitFailoverJob`             | `Start-AzureRmRecoveryServicesAsrCommitFailoverJob`              | `Start-ASRCommitFailoverJob`             |
-| `Start-AzureRmSiteRecoveryPlannedFailoverJob`            | `Start-AzureRmRecoveryServicesAsrPlannedFailoverJob`             | `Start-ASRPlannedFailoverJob`            |
-| `Start-AzureRmSiteRecoveryPolicyAssociationJob`          | `New-AzureRmRecoveryServicesAsrProtectionContainerMapping`       | `New-ASRProtectionContainerMapping`      |
-| `Start-AzureRmSiteRecoveryPolicyDissociationJob`         | `Remove-AzureRmRecoveryServicesAsrProtectionContainerMapping`    | `Remove-ASRProtectionContainerMapping`   |
-| `Start-AzureRmSiteRecoveryTestFailoverJob`               | `Start-AzureRmRecoveryServicesAsrTestFailoverJob`                | `Start-ASRTestFailoverJob`               |
-| `Start-AzureRmSiteRecoveryUnplannedFailoverJob`          | `Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob`           | `Start-ASRUnplannedFailoverJob`          |
-| `Stop-AzureRmSiteRecoveryJob`                            | `Stop-AzureRmRecoveryServicesAsrJob`                             | `Stop-ASRJob`                            |
-| `Update-AzureRmSiteRecoveryPolicy`                       | `Update-AzureRmRecoveryServicesAsrPolicy`                        | `Update-ASRPolicy`                       |
-| `Update-AzureRmSiteRecoveryProtectionDirection`          | `Update-AzureRmRecoveryServicesAsrProtectionDirection`           | `Update-ASRProtectionDirection`          |
-| `Update-AzureRmSiteRecoveryRecoveryPlan`                 | `Update-AzureRmRecoveryServicesAsrRecoveryPlan`                  | `Update-ASRRecoveryPlan`                 |
-| `Update-AzureRmSiteRecoveryServer`                       | `Update-AzureRmRecoveryServicesAsrServicesProvider`              | `Update-ASRServicesProvider`             |
-| `Update-AzureRmSiteRecoveryServicesProvider`             | `Update-AzureRmRecoveryServicesAsrvCenter`                       | `Update-ASRvCenter`                      |
+
+|                    Deprecated cmdlet                     |                        Equivalent cmdlet                        |                 Aliases                  |
+|----------------------------------------------------------|-----------------------------------------------------------------|------------------------------------------|
+|          `Edit-AzureRmSiteRecoveryRecoveryPlan`          |          `Edit-AzureRmRecoveryServicesAsrRecoveryPlan`          |          `Edit-ASRRecoveryPlan`          |
+|             `Get-AzureRmSiteRecoveryFabric`              |             `Get-AzureRmRecoveryServicesAsrFabric`              |             `Get-ASRFabric`              |
+|               `Get-AzureRmSiteRecoveryJob`               |               `Get-AzureRmRecoveryServicesAsrJob`               |               `Get-ASRJob`               |
+|             `Get-AzureRmSiteRecoveryNetwork`             |             `Get-AzureRmRecoveryServicesAsrNetwork`             |             `Get-ASRNetwork`             |
+|         `Get-AzureRmSiteRecoveryNetworkMapping`          |         `Get-AzureRmRecoveryServicesAsrNetworkMapping`          |         `Get-ASRNetworkMapping`          |
+|             `Get-AzureRmSiteRecoveryPolicy`              |             `Get-AzureRmRecoveryServicesAsrPolicy`              |             `Get-ASRPolicy`              |
+|         `Get-AzureRmSiteRecoveryProtectableItem`         |         `Get-AzureRmRecoveryServicesAsrProtectableItem`         |         `Get-ASRProtectableItem`         |
+|       `Get-AzureRmSiteRecoveryProtectionContainer`       |       `Get-AzureRmRecoveryServicesAsrProtectionContainer`       |       `Get-ASRProtectionContainer`       |
+|   `Get-AzureRmSiteRecoveryProtectionContainerMapping`    |   `Get-AzureRmRecoveryServicesAsrProtectionContainerMapping`    |   `Get-ASRProtectionContainerMapping`    |
+|        `Get-AzureRmSiteRecoveryProtectionEntity`         |         `Get-AzureRmRecoveryServicesAsrProtectableItem`         |         `Get-ASRProtectableItem`         |
+|          `Get-AzureRmSiteRecoveryRecoveryPlan`           |          `Get-AzureRmRecoveryServicesAsrRecoveryPlan`           |          `Get-ASRRecoveryPlan`           |
+|          `Get-AzureRmSiteRecoveryRecoveryPoint`          |          `Get-AzureRmRecoveryServicesAsrRecoveryPoint`          |          `Get-ASRRecoveryPoint`          |
+|    `Get-AzureRmSiteRecoveryReplicationProtectedItem`     |    `Get-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `Get-ASRReplicationProtectedItem`     |
+|             `Get-AzureRmSiteRecoveryServer`              |        `Get-AzureRmRecoveryServicesAsrServicesProvider`         |        `Get-ASRServicesProvider`         |
+|        `Get-AzureRmSiteRecoveryServicesProvider`         |        `Get-AzureRmRecoveryServicesAsrServicesProvider`         |        `Get-ASRServicesProvider`         |
+|              `Get-AzureRmSiteRecoverySite`               |             `Get-AzureRmRecoveryServicesAsrFabric`              |             `Get-ASRFabric`              |
+|      `Get-AzureRmSiteRecoveryStorageClassification`      |      `Get-AzureRmRecoveryServicesAsrStorageClassification`      |      `Get-ASRStorageClassification`      |
+|  `Get-AzureRmSiteRecoveryStorageClassificationMapping`   |  `Get-AzureRmRecoveryServicesAsrStorageClassificationMapping`   |  `Get-ASRStorageClassificationMapping`   |
+|              `Get-AzureRmSiteRecoveryVault`              |               `Get-AzureRmRecoveryServicesVault`                |                                          |
+|          `Get-AzureRmSiteRecoveryVaultSettings`          |          `Get-AzureRmRecoveryServicesAsrVaultContext`           |                                          |
+|        `Get-AzureRmSiteRecoveryVaultSettingsFile`        |         `Get-AzureRmRecoveryServicesVaultSettingsFile`          |                                          |
+|               `Get-AzureRmSiteRecoveryVM`                |    `Get-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `Get-ASRReplicationProtectedItem`     |
+|      `Import-AzureRmSiteRecoveryVaultSettingsFile`       |      `Import-AzureRmRecoveryServicesAsrVaultSettingsFile`       |                                          |
+|             `New-AzureRmSiteRecoveryFabric`              |             `New-AzureRmRecoveryServicesAsrFabric`              |             `New-ASRFabric`              |
+|         `New-AzureRmSiteRecoveryNetworkMapping`          |         `New-AzureRmRecoveryServicesAsrNetworkMapping`          |         `New-ASRNetworkMapping`          |
+|             `New-AzureRmSiteRecoveryPolicy`              |             `New-AzureRmRecoveryServicesAsrPolicy`              |             `New-ASRPolicy`              |
+|   `New-AzureRmSiteRecoveryProtectionContainerMapping`    |   `New-AzureRmRecoveryServicesAsrProtectionContainerMapping`    |   `New-ASRProtectionContainerMapping`    |
+|          `New-AzureRmSiteRecoveryRecoveryPlan`           |          `New-AzureRmRecoveryServicesAsrRecoveryPlan`           |          `New-ASRRecoveryPlan`           |
+|    `New-AzureRmSiteRecoveryReplicationProtectedItem`     |    `New-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `New-ASRReplicationProtectedItem`     |
+|              `New-AzureRmSiteRecoverySite`               |             `New-AzureRmRecoveryServicesAsrFabric`              |             `New-ASRFabric`              |
+|  `New-AzureRmSiteRecoveryStorageClassificationMapping`   |  `New-AzureRmRecoveryServicesAsrStorageClassificationMapping`   |  `New-ASRStorageClassificationMapping`   |
+|              `New-AzureRmSiteRecoveryVault`              |               `New-AzureRmRecoveryServicesVault`                |                                          |
+|            `Remove-AzureRmSiteRecoveryFabric`            |            `Remove-AzureRmRecoveryServicesAsrFabric`            |            `Remove-ASRFabric`            |
+|        `Remove-AzureRmSiteRecoveryNetworkMapping`        |        `Remove-AzureRmRecoveryServicesAsrNetworkMapping`        |        `Remove-ASRNetworkMapping`        |
+|            `Remove-AzureRmSiteRecoveryPolicy`            |            `Remove-AzureRmRecoveryServicesAsrPolicy`            |            `Remove-ASRPolicy`            |
+|  `Remove-AzureRmSiteRecoveryProtectionContainerMapping`  |  `Remove-AzureRmRecoveryServicesAsrProtectionContainerMapping`  |  `Remove-ASRProtectionContainerMapping`  |
+|         `Remove-AzureRmSiteRecoveryRecoveryPlan`         |         `Remove-AzureRmRecoveryServicesAsrRecoveryPlan`         |         `Remove-ASRRecoveryPlan`         |
+|   `Remove-AzureRmSiteRecoveryReplicationProtectedItem`   |   `Remove-AzureRmRecoveryServicesAsrReplicationProtectedItem`   |   `Remove-ASRReplicationProtectedItem`   |
+|            `Remove-AzureRmSiteRecoveryServer`            |       `Remove-AzureRmRecoveryServicesAsrServicesProvider`       |                                          |
+|       `Remove-AzureRmSiteRecoveryServicesProvider`       |       `Remove-AzureRmRecoveryServicesAsrServicesProvider`       |       `Remove-ASRServicesProvider`       |
+|             `Remove-AzureRmSiteRecoverySite`             |            `Remove-AzureRmRecoveryServicesAsrFabric`            |            `Remove-ASRFabric`            |
+| `Remove-AzureRmSiteRecoveryStorageClassificationMapping` | `Remove-AzureRmRecoveryServicesAsrStorageClassificationMapping` | `Remove-ASRStorageClassificationMapping` |
+|            `Remove-AzureRmSiteRecoveryVault`             |              `Remove-AzureRmRecoveryServicesVault`              |                                          |
+|             `Restart-AzureRmSiteRecoveryJob`             |             `Restart-AzureRmRecoveryServicesAsrJob`             |             `Restart-ASRJob`             |
+|             `Resume-AzureRmSiteRecoveryJob`              |             `Resume-AzureRmRecoveryServicesAsrJob`              |             `Resume-ASRJob`              |
+|        `Set-AzureRmSiteRecoveryProtectionEntity`         |    `New-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `New-ASRReplicationProtectedItem`     |
+|    `Set-AzureRmSiteRecoveryReplicationProtectedItem`     |    `Set-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `Set-ASRReplicationProtectedItem`     |
+|          `Set-AzureRmSiteRecoveryVaultSettings`          |          `Set-AzureRmRecoveryServicesAsrVaultContext`           |          `Set-ASRVaultContext`           |
+|               `Set-AzureRmSiteRecoveryVM`                |    `Set-AzureRmRecoveryServicesAsrReplicationProtectedItem`     |    `Set-ASRReplicationProtectedItem`     |
+|      `Start-AzureRmSiteRecoveryApplyRecoveryPoint`       |      `Start-AzureRmRecoveryServicesAsrApplyRecoveryPoint`       |      `Start-ASRApplyRecoveryPoint`       |
+|       `Start-AzureRmSiteRecoveryCommitFailoverJob`       |       `Start-AzureRmRecoveryServicesAsrCommitFailoverJob`       |       `Start-ASRCommitFailoverJob`       |
+|      `Start-AzureRmSiteRecoveryPlannedFailoverJob`       |      `Start-AzureRmRecoveryServicesAsrPlannedFailoverJob`       |      `Start-ASRPlannedFailoverJob`       |
+|     `Start-AzureRmSiteRecoveryPolicyAssociationJob`      |   `New-AzureRmRecoveryServicesAsrProtectionContainerMapping`    |   `New-ASRProtectionContainerMapping`    |
+|     `Start-AzureRmSiteRecoveryPolicyDissociationJob`     |  `Remove-AzureRmRecoveryServicesAsrProtectionContainerMapping`  |  `Remove-ASRProtectionContainerMapping`  |
+|        `Start-AzureRmSiteRecoveryTestFailoverJob`        |        `Start-AzureRmRecoveryServicesAsrTestFailoverJob`        |        `Start-ASRTestFailoverJob`        |
+|     `Start-AzureRmSiteRecoveryUnplannedFailoverJob`      |     `Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob`      |     `Start-ASRUnplannedFailoverJob`      |
+|              `Stop-AzureRmSiteRecoveryJob`               |              `Stop-AzureRmRecoveryServicesAsrJob`               |              `Stop-ASRJob`               |
+|            `Update-AzureRmSiteRecoveryPolicy`            |            `Update-AzureRmRecoveryServicesAsrPolicy`            |            `Update-ASRPolicy`            |
+|     `Update-AzureRmSiteRecoveryProtectionDirection`      |     `Update-AzureRmRecoveryServicesAsrProtectionDirection`      |     `Update-ASRProtectionDirection`      |
+|         `Update-AzureRmSiteRecoveryRecoveryPlan`         |         `Update-AzureRmRecoveryServicesAsrRecoveryPlan`         |         `Update-ASRRecoveryPlan`         |
+|            `Update-AzureRmSiteRecoveryServer`            |       `Update-AzureRmRecoveryServicesAsrServicesProvider`       |       `Update-ASRServicesProvider`       |
+|       `Update-AzureRmSiteRecoveryServicesProvider`       |           `Update-AzureRmRecoveryServicesAsrvCenter`            |           `Update-ASRvCenter`            |
+

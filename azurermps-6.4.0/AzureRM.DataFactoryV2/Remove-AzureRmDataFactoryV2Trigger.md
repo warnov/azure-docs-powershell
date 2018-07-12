@@ -33,7 +33,7 @@ Remove-AzureRmDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-DefaultProf
 ```
 
 ## DESCRIPTION
-The **Remove-AzureRmDataFactoryV2Trigger** cmdlet removes a trigger from a data factory. If the _Force_ parameter is specified, the cmdlet doesn't prompt before removing the trigger.
+The **Remove-AzureRmDataFactoryV2Trigger** cmdlet removes a trigger from a data factory. If the *Force* parameter is specified, the cmdlet doesn't prompt before removing the trigger.
 
 ## EXAMPLES
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

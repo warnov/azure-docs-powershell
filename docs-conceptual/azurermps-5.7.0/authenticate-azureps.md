@@ -24,7 +24,7 @@ Connect-AzureRmAccount
 When run, this cmdlet will bring up a dialog box prompting you for your email address and password associated with your Azure account. When you authenticate, that information is saved for the current PowerShell session, the dialog is closed, and you have access to all of the Azure PowerShell cmdlets.
 
 > [!IMPORTANT]
-> This sign in is for the current PowerShell session _only_. To persist authentication across multiple
+> This sign in is for the current PowerShell session *only*. To persist authentication across multiple
 > sessions, see the article on [Persistent Credentials](context-persistence.md).
 
 ## Sign in with a service principal

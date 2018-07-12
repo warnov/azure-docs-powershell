@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.KeyVault.dll-Help.xml
 Module Name: AzureRM.KeyVault
 ms.assetid: 636FAD5B-8C39-4E5C-8978-6845C6B89BC0
@@ -67,10 +67,10 @@ The following directories must all be the same Azure directory:
 Examples of scenarios when these conditions are not met and this cmdlet will not work are: 
 
 - Authorizing a user from a different organization to manage your key vault.
-Each organization has its own directory. 
+  Each organization has its own directory. 
 - Your Azure account has multiple directories.
-If you register an application in a directory other than the default directory, you cannot authorize that application to use your key vault.
-The application must be in the default directory.
+  If you register an application in a directory other than the default directory, you cannot authorize that application to use your key vault.
+  The application must be in the default directory.
 
 Note that although specifying the resource group is optional for this cmdlet, you should do so for better performance.
 
@@ -497,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

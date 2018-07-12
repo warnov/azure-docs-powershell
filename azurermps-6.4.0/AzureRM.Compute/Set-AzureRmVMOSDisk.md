@@ -151,15 +151,15 @@ Specifies whether this cmdlet creates a disk in the virtual machine from a platf
 Valid values are: 
 
 - Attach.
-Specify this option to create a virtual machine from a specialized disk.
-When you specify this option, do not specify the *SourceImageUri* parameter.
-Instead, use the Set-AzureRmVMSourceImage cmdlet.
-You must also use the use the *Windows* or *Linux* parameters to tell the azure2 platform the type of the operating system on the VHD.
-The *VhdUri* parameter is enough to tell the azure2 platform the location of the disk to attach. 
+  Specify this option to create a virtual machine from a specialized disk.
+  When you specify this option, do not specify the *SourceImageUri* parameter.
+  Instead, use the Set-AzureRmVMSourceImage cmdlet.
+  You must also use the use the *Windows* or *Linux* parameters to tell the azure2 platform the type of the operating system on the VHD.
+  The *VhdUri* parameter is enough to tell the azure2 platform the location of the disk to attach. 
 - FromImage.
-Specify this option to create a virtual machine from a platform image or a generalized user image.
-In the case of a generalized user image, you also need to specify the *SourceImageUri* parameter and either the *Windows* or *Linux* parameters to tell the Azure platform the location and type of the operating system disk VHD instead of using the **Set-AzureRmVMSourceImage** cmdlet.
-In the case of a platform image, the *VhdUri* parameter is sufficient. 
+  Specify this option to create a virtual machine from a platform image or a generalized user image.
+  In the case of a generalized user image, you also need to specify the *SourceImageUri* parameter and either the *Windows* or *Linux* parameters to tell the Azure platform the location and type of the operating system disk VHD instead of using the **Set-AzureRmVMSourceImage** cmdlet.
+  In the case of a platform image, the *VhdUri* parameter is sufficient. 
 - Empty.
 
 ```yaml
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

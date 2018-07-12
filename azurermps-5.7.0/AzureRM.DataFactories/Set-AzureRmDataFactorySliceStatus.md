@@ -172,15 +172,15 @@ Specifies a status to assign to the data slice.
 The acceptable values for this parameter are:
 
 - Waiting.
-Data slice is waiting for validation against validation policies before being processed. 
+  Data slice is waiting for validation against validation policies before being processed. 
 - Ready.
-Data processing has completed and the data slice is ready.
+  Data processing has completed and the data slice is ready.
 - InProgress.
-Data processing is in-progress. 
+  Data processing is in-progress. 
 - Failed.
-Data processing failed.
+  Data processing failed.
 - Skipped.
-Skipped processing the data slice.
+  Skipped processing the data slice.
 
 ```yaml
 Type: String
@@ -200,9 +200,9 @@ Specifies the type of update to the slice.
 The acceptable values for this parameter are:
 
 - Individual.
-Sets the status of each slice for the dataset in the specified time range. 
+  Sets the status of each slice for the dataset in the specified time range. 
 - UpstreamInPipeline.
-Sets the status of each slice for the dataset and all the dependent datasets, which are used as input datasets for activities in the pipeline.
+  Sets the status of each slice for the dataset and all the dependent datasets, which are used as input datasets for activities in the pipeline.
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

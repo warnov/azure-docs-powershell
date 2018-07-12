@@ -178,10 +178,10 @@ Specifies the kind of Storage account that this cmdlet creates.
 The acceptable values for this parameter are:
 
 - Storage.
-General purpose storage account that supports storage of Blobs, Tables, Queues, Files and Disks.
+  General purpose storage account that supports storage of Blobs, Tables, Queues, Files and Disks.
 
 - BlobStorage.
-Blob storage account which supports storage of Blobs only.
+  Blob storage account which supports storage of Blobs only.
 
 
 The default value is Storage.
@@ -248,15 +248,15 @@ Specifies the SKU name of the storage account that this cmdlet creates.
 The acceptable values for this parameter are:
 
 - Standard_LRS.
-Locally-redundant storage.
+  Locally-redundant storage.
 - Standard_ZRS.
-Zone-redundant storage.
+  Zone-redundant storage.
 - Standard_GRS.
-Geo-redundant storage.
+  Geo-redundant storage.
 - Standard_RAGRS.
-Read access geo-redundant storage.
+  Read access geo-redundant storage.
 - Premium_LRS.
-Premium locally-redundant storage.
+  Premium locally-redundant storage.
 
 ```yaml
 Type: String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

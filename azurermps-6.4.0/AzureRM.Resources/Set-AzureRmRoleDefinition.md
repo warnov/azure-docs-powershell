@@ -44,13 +44,13 @@ Following is a sample updated role definition json for Set-AzureRmRoleDefinition
         "Description": "Can monitor all resources and start and restart virtual machines",
         "Actions":
         \[
-            "*/read",
+            "<em>/read",
             "Microsoft.ClassicCompute/virtualmachines/restart/action",
             "Microsoft.ClassicCompute/virtualmachines/start/action"
         \],
         "NotActions":
         \[
-            "*/write"
+            "</em>/write"
         \],
         "DataActions":
         \[
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

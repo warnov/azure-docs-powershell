@@ -1,0 +1,242 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/target_repo",
+  "xrefmap": [
+    "xrefmap.yml",
+    "azurermps-1.2.9.xrefmap.yml",
+    "azurermps-4.4.1.xrefmap.yml",
+    "azurermps-5.7.0.xrefmap.yml",
+    "azurermps-6.4.0.xrefmap.yml",
+    "azuresmps-3.7.0.xrefmap.yml",
+    "azuresmps-4.0.0.xrefmap.yml",
+    "azurestackps-1.2.11.xrefmap.yml",
+    "azurestackps-1.3.0.xrefmap.yml"
+  ],
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/cloud-powershell.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-1.2.9/media/get-started-azureps/cloud-powershell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-1.2.9",
+      "group": "azurermps-1.2.9"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/cloud-powershell.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-4.4.1/media/get-started-azureps/cloud-powershell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-4.4.1",
+      "group": "azurermps-4.4.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/cloud-powershell.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-5.7.0/media/get-started-azureps/cloud-powershell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-5.7.0",
+      "group": "azurermps-5.7.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/cloud-powershell.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-6.4.0/media/get-started-azureps/cloud-powershell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-6.4.0",
+      "group": "azurermps-6.4.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/shell-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-1.2.9/media/get-started-azureps/shell-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-1.2.9",
+      "group": "azurermps-1.2.9"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/shell-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-4.4.1/media/get-started-azureps/shell-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-4.4.1",
+      "group": "azurermps-4.4.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/shell-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-5.7.0/media/get-started-azureps/shell-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-5.7.0",
+      "group": "azurermps-5.7.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/shell-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-6.4.0/media/get-started-azureps/shell-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-6.4.0",
+      "group": "azurermps-6.4.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/storage-prompt.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-1.2.9/media/get-started-azureps/storage-prompt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-1.2.9",
+      "group": "azurermps-1.2.9"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/storage-prompt.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-4.4.1/media/get-started-azureps/storage-prompt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-4.4.1",
+      "group": "azurermps-4.4.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/storage-prompt.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-5.7.0/media/get-started-azureps/storage-prompt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-5.7.0",
+      "group": "azurermps-5.7.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/get-started-azureps/storage-prompt.png",
+      "output": {
+        "resource": {
+          "relative_path": "azurermps-6.4.0/media/get-started-azureps/storage-prompt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "azurermps-6.4.0",
+      "group": "azurermps-6.4.0"
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {
+    "azurermps-1.2.9": {
+      "version_folder": "azurermps-1.2.9/"
+    },
+    "azurermps-4.4.1": {
+      "version_folder": "azurermps-4.4.1/"
+    },
+    "azurermps-5.7.0": {
+      "version_folder": "azurermps-5.7.0/"
+    },
+    "azurermps-6.4.0": {
+      "version_folder": "azurermps-6.4.0/"
+    },
+    "azuresmps-3.7.0": {
+      "version_folder": "azuresmps-3.7.0/"
+    },
+    "azuresmps-4.0.0": {
+      "version_folder": "azuresmps-4.0.0/"
+    },
+    "azurestackps-1.2.11": {
+      "version_folder": "azurestackps-1.2.11/"
+    },
+    "azurestackps-1.3.0": {
+      "version_folder": "azurestackps-1.3.0/"
+    }
+  },
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    },
+    {
+      "name": "azurermps-1.2.9",
+      "dest": "azurermps-1.2.9",
+      "xrefmap": "azurermps-1.2.9.xrefmap.yml"
+    },
+    {
+      "name": "azurermps-4.4.1",
+      "dest": "azurermps-4.4.1",
+      "xrefmap": "azurermps-4.4.1.xrefmap.yml"
+    },
+    {
+      "name": "azurermps-5.7.0",
+      "dest": "azurermps-5.7.0",
+      "xrefmap": "azurermps-5.7.0.xrefmap.yml"
+    },
+    {
+      "name": "azurermps-6.4.0",
+      "dest": "azurermps-6.4.0",
+      "xrefmap": "azurermps-6.4.0.xrefmap.yml"
+    },
+    {
+      "name": "azuresmps-3.7.0",
+      "dest": "azuresmps-3.7.0",
+      "xrefmap": "azuresmps-3.7.0.xrefmap.yml"
+    },
+    {
+      "name": "azuresmps-4.0.0",
+      "dest": "azuresmps-4.0.0",
+      "xrefmap": "azuresmps-4.0.0.xrefmap.yml"
+    },
+    {
+      "name": "azurestackps-1.2.11",
+      "dest": "azurestackps-1.2.11",
+      "xrefmap": "azurestackps-1.2.11.xrefmap.yml"
+    },
+    {
+      "name": "azurestackps-1.3.0",
+      "dest": "azurestackps-1.3.0",
+      "xrefmap": "azurestackps-1.3.0.xrefmap.yml"
+    }
+  ]
+}

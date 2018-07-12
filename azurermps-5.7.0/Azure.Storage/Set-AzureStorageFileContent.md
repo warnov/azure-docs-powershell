@@ -177,8 +177,8 @@ This cmdlet uploads contents to the file that this parameter specifies, or to a 
 If you specify a folder, this cmdlet creates a file that has the same name as the source file.
 
 If you specify a path of a file that does not exist, this cmdlet creates that file and saves the contents to that file.
-If you specify a file that already exists, and you specify the _Force_ parameter, this cmdlet overwrites the contents of the file.
-If you specify a file that already exists and you do not specify _Force_, this cmdlet makes no change, and returns an error.
+If you specify a file that already exists, and you specify the *Force* parameter, this cmdlet overwrites the contents of the file.
+If you specify a file that already exists and you do not specify *Force*, this cmdlet makes no change, and returns an error.
 
 If you specify a path of a folder that does not exist, this cmdlet makes no change, and returns an error.
 
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

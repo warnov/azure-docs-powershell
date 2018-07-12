@@ -193,16 +193,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 
-###  
+### 
 You can pass input to this cmdlet by property name, but not by value.
 
 ## OUTPUTS
 
-###  
+### 
 Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.MetricResponse
 
 By default, **Get-AzureWebHostingPlanMetric** returns an array of **MetricResponse** objects.

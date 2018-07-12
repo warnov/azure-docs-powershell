@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.RecoveryServices.Backup.dll-Help.xml
 Module Name: AzureRM.RecoveryServices.Backup
 ms.assetid: DEB3D7B5-D974-472B-B8B4-9A19CA6AECCC
@@ -59,7 +59,7 @@ The acceptable values for this parameter are:
 - MARS 
 - SCDPM 
 - AzureBackupServer 
- AzureSQL
+  AzureSQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupManagementType
@@ -110,13 +110,13 @@ Specifies the state of protection.
 The acceptable values for this parameter are:
 
 - IRPending.
-Initial synchronization has not started and there is no recovery point yet. 
+  Initial synchronization has not started and there is no recovery point yet. 
 - Protected.
-Protection is ongoing. 
+  Protection is ongoing. 
 - ProtectionError.
-There is a protection error.
+  There is a protection error.
 - ProtectionStopped.
-Protection is disabled.
+  Protection is disabled.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemProtectionState
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Resources.dll-Help.xml
 Module Name: AzureRM.Resources
 ms.assetid: 8300B143-E322-419E-BC98-DBA56DD90A59
@@ -43,16 +43,16 @@ The input role definition MUST contain the following properties:
 3) Actions: the set of operations to which the custom role grants access.
 Use Get-AzureRmProviderOperations to get the operation for Azure resource providers that can be secured using Azure RBAC.
 Following are some valid operation strings:
- - "*/read" grants access to read operations of all Azure resource providers.
- - "Microsoft.Network/*/read" grants access to read operations for all resource types in the Microsoft.Network resource provider of Azure.
- - "Microsoft.Compute/virtualMachines/*" grants access to all operations of virtual machines and its child resource types.
+- "*/read" grants access to read operations of all Azure resource providers.
+- "Microsoft.Network/*/read" grants access to read operations for all resource types in the Microsoft.Network resource provider of Azure.
+- "Microsoft.Compute/virtualMachines/*" grants access to all operations of virtual machines and its child resource types.
 
 4) AssignableScopes: the set of scopes (Azure subscriptions or resource groups) in which the custom role will be available for assignment.
 Using AssignableScopes you can make the custom role available for assignment in only the subscriptions or resource groups that need it, and not clutter the user experience for the rest of the subscriptions or resource groups.
 Following are some valid assignable scopes:
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624": makes the role available for assignment in two subscriptions.
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e": makes the role available for assignment in a single subscription.
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": makes the role available for assignment only in the Network resource group.
+- "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624": makes the role available for assignment in two subscriptions.
+- "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e": makes the role available for assignment in a single subscription.
+- "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": makes the role available for assignment only in the Network resource group.
 
 The input role definition MAY contain the following properties:
 
@@ -67,17 +67,17 @@ Following is a sample json role definition that can be provided as input
         "Name": "Contoso On-call",
         "Description": "Can monitor compute, network and storage, and restart virtual machines",
         "Actions": \[
-        "Microsoft.Compute/*/read",
+        "Microsoft.Compute/<em>/read",
         "Microsoft.Compute/virtualMachines/start/action",
         "Microsoft.Compute/virtualMachines/restart/action",
         "Microsoft.Compute/virtualMachines/downloadRemoteDesktopConnectionFile/action",
-        "Microsoft.Network/*/read",
-        "Microsoft.Storage/*/read",
-        "Microsoft.Authorization/*/read",
+        "Microsoft.Network/</em>/read",
+        "Microsoft.Storage/<em>/read",
+        "Microsoft.Authorization/</em>/read",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
-        "Microsoft.Insights/alertRules/*",
-        "Microsoft.Support/*"
+        "Microsoft.Insights/alertRules/<em>",
+        "Microsoft.Support/</em>"
         \],
         "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx","/subscriptions/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy"\]
         }
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

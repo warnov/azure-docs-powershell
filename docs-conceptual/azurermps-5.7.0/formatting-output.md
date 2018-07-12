@@ -13,6 +13,7 @@ ms.date: 06/07/2018
 
 By default each Azure PowerShell cmdlet has predefined formatting of output making it easy to read.  PowerShell also provides the flexibility to adjust the output or convert the cmdlet output to a different format with the following cmdlets:
 
+
 | Formatting      | Conversion       |
 |-----------------|------------------|
 | [Format-Custom](/powershell/module/microsoft.powershell.utility/format-custom) | [ConvertTo-Csv](/powershell/module/microsoft.powershell.utility/convertto-csv)  |

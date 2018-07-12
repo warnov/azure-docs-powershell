@@ -106,44 +106,44 @@ Specifies Redis configuration settings.
 The acceptable values for this parameter are:
 
 - rdb-backup-enabled.
-Specifies that Redis data persistence is enabled.
-Premium tier only.
+  Specifies that Redis data persistence is enabled.
+  Premium tier only.
 - rdb-storage-connection-string.
-Specifies the connection string to the Storage account for Redis data persistence.
-Premium tier only.
+  Specifies the connection string to the Storage account for Redis data persistence.
+  Premium tier only.
 - rdb-backup-frequency.
-Specifies the backup frequency for Redis data persistence.
-Premium tier only. 
+  Specifies the backup frequency for Redis data persistence.
+  Premium tier only. 
 - maxmemory-reserved.
-Configures the memory reserved for non-cache processes.
-Standard and Premium tiers. 
+  Configures the memory reserved for non-cache processes.
+  Standard and Premium tiers. 
 - maxmemory-policy.
-Configures the eviction policy for the cache.
-All pricing tiers. 
+  Configures the eviction policy for the cache.
+  All pricing tiers. 
 - notify-keyspace-events.
-Configures keyspace notifications.
-Standard and premium tiers. 
+  Configures keyspace notifications.
+  Standard and premium tiers. 
 - hash-max-ziplist-entries.
-Configures memory optimization for small aggregate data types.
-Standard and Premium tiers. 
+  Configures memory optimization for small aggregate data types.
+  Standard and Premium tiers. 
 - hash-max-ziplist-value.
-Configures memory optimization for small aggregate data types.
-Standard and Premium tiers. 
+  Configures memory optimization for small aggregate data types.
+  Standard and Premium tiers. 
 - set-max-intset-entries.
-Configures memory optimization for small aggregate data types.
-Standard and Premium tiers. 
+  Configures memory optimization for small aggregate data types.
+  Standard and Premium tiers. 
 - zset-max-ziplist-entries.
-Configures memory optimization for small aggregate data types.
-Standard and Premium tiers. 
+  Configures memory optimization for small aggregate data types.
+  Standard and Premium tiers. 
 - zset-max-ziplist-value.
-Configures memory optimization for small aggregate data types.
-Standard and Premium tiers. 
+  Configures memory optimization for small aggregate data types.
+  Standard and Premium tiers. 
 - databases.
-Configures the number of databases.
-This property can be configured only at cache creation.
-Standard and Premium tiers.
+  Configures the number of databases.
+  This property can be configured only at cache creation.
+  Standard and Premium tiers.
 
-For more information, see Manage Azure Redis Cache with Azure PowerShellhttp://go.microsoft.com/fwlink/?LinkId=800051 (http://go.microsoft.com/fwlink/?LinkId=800051).
+For more information, see Manage Azure Redis Cache with Azure PowerShellhttp://go.microsoft.com/fwlink/?LinkId=800051 (<http://go.microsoft.com/fwlink/?LinkId=800051>).
 
 ```yaml
 Type: Hashtable
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

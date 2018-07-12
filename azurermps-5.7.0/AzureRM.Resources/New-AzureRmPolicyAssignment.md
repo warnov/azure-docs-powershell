@@ -103,7 +103,7 @@ The final command assigns the policy in $Policy at the level of a resource group
 The **ResourceId** property of $ResourceGroup identifies the resource group.
 
 ### Example 3: Policy assignment at resource group level with policy parameter file
-Create a file called _AllowedLocations.json_ in the local working directory with the following content.
+Create a file called *AllowedLocations.json* in the local working directory with the following content.
 ```
 {
     "listOfAllowedLocations":  {
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

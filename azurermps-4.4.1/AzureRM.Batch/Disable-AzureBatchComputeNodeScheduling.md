@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Batch.dll-Help.xml
 Module Name: AzureRM.Batch
 ms.assetid: 2DF5FB4D-A5CB-439C-AC6F-DF2130AF33EC
@@ -36,9 +36,9 @@ When you disable task scheduling on a compute node you will also have the option
 **Disable-AzureBatchComputeNodeScheduling** lets you do the following: 
 
 - Terminate the tasks and put them back in the job queue.
-This enables those tasks to be rescheduled on another compute node. 
+  This enables those tasks to be rescheduled on another compute node. 
 - Terminate the tasks and remove them from the job queue.
-Tasks stopped in this manner will not be rescheduled. 
+  Tasks stopped in this manner will not be rescheduled. 
 - Wait for all the tasks currently being executed to complete and then disable task scheduling on the compute node. 
 - Wait for all the running tasks to complete and all the data retention periods to expire, and then disable task scheduling on the compute node.
 
@@ -112,18 +112,18 @@ Specifies how this cmdlet deals with any tasks currently running on the computer
 The acceptable values for this parameter are:
 
 - Requeue.
-Tasks are stopped immediately and returned to the job queue.
-This enables the tasks to be rescheduled on another compute node.
-This is the default value. 
+  Tasks are stopped immediately and returned to the job queue.
+  This enables the tasks to be rescheduled on another compute node.
+  This is the default value. 
 - Terminate.
-Tasks are stopped immediately and removed from the job queue.
-These tasks will not be rescheduled. 
+  Tasks are stopped immediately and removed from the job queue.
+  These tasks will not be rescheduled. 
 - TaskCompletion.
-Currently running tasks will be able to complete before task scheduling is disabled on the compute node.
-No new tasks will be scheduled on this node. 
+  Currently running tasks will be able to complete before task scheduling is disabled on the compute node.
+  No new tasks will be scheduled on this node. 
 - RetainedData.
-Currently running tasks will be able to complete and data retention periods will be able to expire before task scheduling is disabled on the compute node.
-No new tasks will be scheduled on this node.
+  Currently running tasks will be able to complete and data retention periods will be able to expire before task scheduling is disabled on the compute node.
+  No new tasks will be scheduled on this node.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption]
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

@@ -51,7 +51,7 @@ section of this article.
 > Using PowerShellGet requires an Execution Policy that allows you to run scripts. For more
 > information about PowerShell's Execution Policy, see
 > [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
-
+> 
 > [!IMPORTANT]
 > The module described in this document, AzureRM, uses .NET Framework. This makes it incompatible with PowerShell 6.0,
 > which uses .NET Core. If you are using PowerShell 6.0, follow the [installation instructions for
@@ -77,7 +77,7 @@ You are installing the modules from an untrusted repository. If you trust this r
 its InstallationPolicy value by running the Set-PSRepository cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
 ```
 
 Answer 'Yes' or 'Yes to All' to continue with the installation.
@@ -119,6 +119,7 @@ feedback from the command line, use the `Send-Feedback` cmdlet.
 
 ### How to get PowerShellGet
 
+
 |OS Version|Install instructions|
 |---|---|
 |I have Windows 10 or Windows Server 2016|Built into Windows Management Framework (WMF) 5.0 included in the OS|
@@ -155,10 +156,10 @@ available on this system. This module 'Azure.Storage' may override the existing 
 still want to install this module 'Azure.Storage', use -AllowClobber parameter.
 
 At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1772 char:21
-+ ...          $null = PackageManagement\Install-Package @PSBoundParameters
-+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
-    + FullyQualifiedErrorId : CommandAlreadyAvailable,Validate-ModuleCommandAlreadyAvailable,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
+    + FullyQualifiedErrorId : CommandAlreadyAvailable,Validate-ModuleCommandAlreadyAvailable,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
 ```
 
 As the error message states, you need to use the -AllowClobber parameter to install the module. Use
@@ -193,9 +194,9 @@ Import-Module -Name AzureRM -RequiredVersion 1.2.9
 
 > [!NOTE]
 > Version 2.1.0 and version 1.2.6 are the first module versions designed to be installed and used
-side by side. When loading an earlier version of the Azure PowerShell, incompatible versions of the
-**AzureRM.Profile** module are loaded. This results in the cmdlets prompting you to sign in whenever
-you execute a cmdlet.
+> side by side. When loading an earlier version of the Azure PowerShell, incompatible versions of the
+> **AzureRM.Profile** module are loaded. This results in the cmdlets prompting you to sign in whenever
+> you execute a cmdlet.
 
 ### Other installation methods
 

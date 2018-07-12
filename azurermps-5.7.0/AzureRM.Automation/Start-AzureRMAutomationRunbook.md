@@ -48,7 +48,7 @@ Start-AzureRmAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01
 ```
 
 This command starts a runbook job for the runbook named Runbk01 in the Azure Automation account named Contoso17.
-This command specifies the _Wait_ parameter.
+This command specifies the *Wait* parameter.
 Therefore, it returns results after the job is completed.
 The cmdlet waits up to 1000 seconds for the results.
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 
@@ -178,10 +178,10 @@ This cmdlet does not accept any input.
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Automation.Model.Job
-This cmdlet returns a **Job** object, unless you specify the _Wait_ parameter.
+This cmdlet returns a **Job** object, unless you specify the *Wait* parameter.
 
-If you do not specify _Wait_, Azure PowerShell returns a **Job** object immediately.
-If you specify _Wait_, Azure PowerShell completes the job, and then returns the result.
+If you do not specify *Wait*, Azure PowerShell returns a **Job** object immediately.
+If you specify *Wait*, Azure PowerShell completes the job, and then returns the result.
 The result is not a **Job** object.
 
 ## NOTES

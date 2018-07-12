@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 
@@ -147,27 +147,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **CloudType** object, which contains the following fields: 
 
 - **Hostname**.
-**String**. 
+  **String**. 
 - **InstanceId**.
-**String**. 
+  **String**. 
 - **IsDefault**.
-**Boolean**. 
+  **Boolean**. 
 - **Location**.
-**String**. 
+  **String**. 
 - **Login**.
-**String**. 
+  **String**. 
 - **Name**.
-**String**. 
+  **String**. 
 - **OperationInProgress**.
-**OperationInProgress**. 
+  **OperationInProgress**. 
 - **Password**.
-**String**. 
+  **String**. 
 - **PasswordEncryptionCertThumbprint**.
-**String**. 
+  **String**. 
 - **UseSSL**.
-**Boolean**. 
+  **Boolean**. 
 - **VolumeCount**.
-**Integer**.
+  **Integer**.
 
 ## NOTES
 

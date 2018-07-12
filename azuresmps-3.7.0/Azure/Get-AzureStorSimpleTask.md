@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 
@@ -91,22 +91,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **TaskStatusInfo** object which contains the following fields: 
 
 - **Error**.
-**ErrorDetails**, which contains **Code** and **Message**.
+  **ErrorDetails**, which contains **Code** and **Message**.
 - **TaskId**.
-**String**.
-The ID of the task for which status is returned.
+  **String**.
+  The ID of the task for which status is returned.
 - **TaskSteps**.
-**IList\<TaskStep\>**.
-Each **TaskStep** object contains **Detail**, **ErrorCode**, **Message**, **Result**, and **Status**.
+  **IList\<TaskStep\>**.
+  Each **TaskStep** object contains **Detail**, **ErrorCode**, **Message**, **Result**, and **Status**.
 - **Result**.
-**TaskResult**, which contains the overall result of the task.
-Valid values are: Failed, Succeeded, PartialSuccess, Cancelled, and Invalid.
+  **TaskResult**, which contains the overall result of the task.
+  Valid values are: Failed, Succeeded, PartialSuccess, Cancelled, and Invalid.
 - **Status**.
-**TaskStatus**, which contains the overall running status of the task.
-Valid values are: Inprogress, Invalid, and Completed.
+  **TaskStatus**, which contains the overall running status of the task.
+  Valid values are: Inprogress, Invalid, and Completed.
 - **TaskResult**.
-**TaskResult**, a value computed based on **Result** and **Status**.
-Valid values are: Failed, Succeeded, InProgress, PartialSuccess, Cancelled, and Invalid.
+  **TaskResult**, a value computed based on **Result** and **Status**.
+  Valid values are: Failed, Succeeded, InProgress, PartialSuccess, Cancelled, and Invalid.
 
 ## NOTES
 

@@ -48,6 +48,7 @@ Install-Module PowerShellGet -Force
 
 If you don't have PowerShellGet installed, follow the instructions in the table below for your system.
 
+
 |Scenario|Install instructions|
 |---|---|
 |Windows 10<br/>Windows Server 2016|Built into Windows Management Framework (WMF) 5.0 included in the OS|
@@ -58,7 +59,7 @@ If you don't have PowerShellGet installed, follow the instructions in the table 
 > Using PowerShellGet requires an Execution Policy that allows you to run scripts. For more
 > information about PowerShell's Execution Policy, see
 > [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
-
+> 
 > [!IMPORTANT]
 > The module described in this document, AzureRM, uses .NET Framework. This makes it incompatible with PowerShell 6.0,
 > which uses .NET Core. If you are using PowerShell 6.0, follow the [installation instructions for
@@ -87,7 +88,7 @@ You are installing the modules from an untrusted repository. If you trust this r
 its InstallationPolicy value by running the Set-PSRepository cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 
 Answer `Yes` or `Yes to All` to continue with the installation.
@@ -114,7 +115,7 @@ To learn how to persist your Azure sign in across sessions, see [Persist user cr
 
 ## Update the Azure PowerShell module
 
-You can update your Azure PowerShell installation by running [Update-Module](/powershell/module/powershellget/update-module). This command does __not__ uninstall earlier versions.
+You can update your Azure PowerShell installation by running [Update-Module](/powershell/module/powershellget/update-module). This command does **not** uninstall earlier versions.
 
 ```powershell
 Update-Module -Name AzureRM

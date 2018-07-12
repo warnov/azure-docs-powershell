@@ -14,6 +14,7 @@ ms.date: 06/20/2018
 There are a set of Docker images preconfigured with Azure PowerShell. Two types of containers are available: Those running traditional
 PowerShell on Windows, and a container running PowerShell Core on either Windows or Linux.
 
+
 | Environment | Docker image |
 |-------------|--------------|
 | PowerShell on Windows | [azuresdk/azure-powershell](https://hub.docker.com/r/azuresdk/azure-powershell/) |

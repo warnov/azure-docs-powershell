@@ -105,7 +105,7 @@ Specifies the access tier of the Storage account that this cmdlet modifies.
 The acceptable values for this parameter are: Hot and Cool.
 
 If you change the access tier, it may result in additional charges.
-For more information, see Azure Blob Storage: Hot and cool storage tiershttp://go.microsoft.com/fwlink/?LinkId=786482 (http://go.microsoft.com/fwlink/?LinkId=786482).
+For more information, see Azure Blob Storage: Hot and cool storage tiershttp://go.microsoft.com/fwlink/?LinkId=786482 (<http://go.microsoft.com/fwlink/?LinkId=786482>).
 If the kind of Storage account is Storage, do not specify this parameter.
 
 ```yaml
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -Force
 If you change the access tier, it may result in additional charges.
-For more information, see Azure Blob Storage: Hot and cool storage tiershttp://go.microsoft.com/fwlink/?LinkId=786482 (http://go.microsoft.com/fwlink/?LinkId=786482).
+For more information, see Azure Blob Storage: Hot and cool storage tiershttp://go.microsoft.com/fwlink/?LinkId=786482 (<http://go.microsoft.com/fwlink/?LinkId=786482>).
 If the kind of Storage account is Storage, do not specify this parameter.
 
 ```yaml
@@ -348,15 +348,15 @@ Specifies the SKU name of the storage account.
 The acceptable values for this parameter are:
 
 - Standard_LRS.
-Locally-redundant storage.
+  Locally-redundant storage.
 - Standard_ZRS.
-Zone-redundant storage.
+  Zone-redundant storage.
 - Standard_GRS.
-Geo-redundant storage.
+  Geo-redundant storage.
 - Standard_RAGRS.
-Read access geo-redundant storage.
+  Read access geo-redundant storage.
 - Premium_LRS.
-Premium locally-redundant storage.
+  Premium locally-redundant storage.
 
 You cannot change Standard_ZRS and Premium_LRS types to other account types.
 You cannot change other account types to Standard_ZRS or Premium_LRS.
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

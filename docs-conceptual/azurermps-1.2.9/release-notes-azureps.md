@@ -19,15 +19,16 @@ This is a list of changes made to Azure PowerShell in this release.
 Changes This Release
 
 * AzureRm.AzureStackAdmin Module
-    + Changes in the Add-AzureRmResourceProviderRegistration cmdlet for the support of Admin Azure
-      resource manager and tenant azure resource manager split. A new parameter -ResourceManagerType
-      has been added.
-    + Removal of the parameters -AdminUri, -ApiVersion, -SubscriptionId and -Token from each
-      cmdlets. We have been printing warnings that these parameters will be deprecated and now they
-      got removed.
+  + Changes in the Add-AzureRmResourceProviderRegistration cmdlet for the support of Admin Azure
+    resource manager and tenant azure resource manager split. A new parameter -ResourceManagerType
+    has been added.
+  + Removal of the parameters -AdminUri, -ApiVersion, -SubscriptionId and -Token from each
+    cmdlets. We have been printing warnings that these parameters will be deprecated and now they
+    got removed.
 * AzureStackStorage module
-    + Added new cmdlets to support container migration scenarios.
-    + Removed cmdlets referring to internal components and underlying features.
+  + Added new cmdlets to support container migration scenarios.
+  + Removed cmdlets referring to internal components and underlying features.
+
 * AzureRM.BootStrapper
-    + Created new module to manage versions of Azure PowerShell cmdlets through the use of version
-      profiles
+  + Created new module to manage versions of Azure PowerShell cmdlets through the use of version
+    profiles

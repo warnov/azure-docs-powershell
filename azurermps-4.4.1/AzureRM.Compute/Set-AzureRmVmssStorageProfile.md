@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 ms.assetid: 230DAE05-C197-451F-A24C-F4A2DAE4AD04
@@ -214,7 +214,7 @@ The acceptable values for this parameter are:
 
 - Attach : This value is used when you are using a specialized disk to create the VMSS virtual machine. 
 - FromImage : This value is used when you are using an image to create the VMSS virtual machine.
-If you are using a platform image, you will also use the *imageReference* parameter.
+  If you are using a platform image, you will also use the *imageReference* parameter.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.DiskCreateOptionTypes]
@@ -323,11 +323,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 
-###  
+### 
 This cmdlet does not generate any output.
 
 ## OUTPUTS

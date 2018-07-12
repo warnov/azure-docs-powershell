@@ -17,14 +17,14 @@ Modifies  an instance of PowerBI Embedded Capacity.
 
 ```
 Update-AzureRmPowerBIEmbeddedCapacity 
-	[-Name] <String> 
-	[[-ResourceGroupName] <String>] 
-	[[-Sku] <String>]
- 	[[-Tag] <Hashtable>] 
-	[[-Administrator] <String>] 
-	[-PassThru] 
-	[-WhatIf]
- 	[-Confirm] 
+    [-Name] <String> 
+    [[-ResourceGroupName] <String>] 
+    [[-Sku] <String>]
+    [[-Tag] <Hashtable>] 
+    [[-Administrator] <String>] 
+    [-PassThru] 
+    [-WhatIf]
+    [-Confirm] 
     [<CommonParameters>]
 ```
 
@@ -46,7 +46,6 @@ Administrator          : {testuser1@contoso.com, testuser2@contoso.com}
 Sku                    : A1
 Tier                   : PBIE_Azure
 Tag                    : {[key1, value1], [key2, value2]}
-
 ```
 
 Modifies the capacity named testcapacity in resourcegroup testgroup to set the tags as key1:value1 and key2:value2 and administrator to testuser1@contoso.com
@@ -195,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Azure.Commands.Sql.dll-Help.xml
 Module Name: AzureRM.Sql
 ms.assetid: A1E19A66-CD70-467E-8C59-1F88453905A4
@@ -26,7 +26,7 @@ These recommendations include the following values:
 
 - DatabaseCollection. Collection of database names that belong to the pool. 
 - DatabaseDtuMin. Data Transmission Unit (DTU) guarantee for databases in the elastic pool. 
- -- DatabaseDtuMax. DTU cap for databases in the elastic pool. 
+  -- DatabaseDtuMax. DTU cap for databases in the elastic pool. 
 - Dtu. DTU guarantee for the elastic pool. 
 - StorageMb. Storage in megabytes for the elastic pool. 
 - Edition. Edition for the elastic pool. The acceptable values for this parameter are: Basic, Standard, and Premium. 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

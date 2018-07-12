@@ -17,12 +17,12 @@ Deletes an instance of PowerBI Embedded Capacity.
 
 ```
 Remove-AzureRmPowerBIEmbeddedCapacity 
-	[-Name] <String> 
-	[[-ResourceGroupName] <String>] 
-	[-PassThru] 
-	[-WhatIf]
- 	[-Confirm] 
-	[<CommonParameters>]
+    [-Name] <String> 
+    [[-ResourceGroupName] <String>] 
+    [-PassThru] 
+    [-WhatIf]
+    [-Confirm] 
+    [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,6 @@ Administrator          : {admin@microsoft.com}
 Sku                    : A1
 Tier                   : PBIE_Azure
 Tag                    : {}
-
 ```
 
 This command will remove the capacity named testcapacity in the resourcegroup testRG
@@ -152,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (<http://go.microsoft.com/fwlink/?LinkID=113216>).
 
 ## INPUTS
 

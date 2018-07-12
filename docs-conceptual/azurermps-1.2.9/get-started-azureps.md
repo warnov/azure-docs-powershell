@@ -49,7 +49,7 @@ information about the latest release, see the [release notes](./release-notes-az
 Sign on interactively:
 
 1. Type `Login-AzureRmAccount`. You will get dialog box asking for your Azure credentials. Option
-  '-EnvironmentName' can let you login in Azure China or Azure Germany.
+   '-EnvironmentName' can let you login in Azure China or Azure Germany.
 
    e.g. Login-AzureRmAccount -EnvironmentName AzureChinaCloud
 

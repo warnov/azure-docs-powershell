@@ -18,7 +18,7 @@ version of Azure PowerShell available.
 > At this time, both PowerShell Core v6 and Azure PowerShell for .NET Core are still in beta.
 > Support for these products is limited. If you have problems or discover bugs, please file an issue
 > on GitHub.
->
+> 
 > * [Issues for PowerShell Core v6](https://github.com/PowerShell/PowerShell/issues)
 > * [Issues for Azure PowerShell](https://github.com/azure/azure-docs-powershell/issues)
 
@@ -60,7 +60,7 @@ You are installing the modules from an untrusted repository. If you trust this r
 its InstallationPolicy value by running the Set-PSRepository cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+[Y] Yesï¿½ [A] Yes to Allï¿½ [N] Noï¿½ [L] No to Allï¿½ [S] Suspendï¿½ [?] Help (default is "N"):
 ```
 
 Answer `Yes` or `Yes to All` to continue with the installation.
@@ -69,7 +69,7 @@ Answer `Yes` or `Yes to All` to continue with the installation.
 
 To start working with Azure PowerShell, you need to load `AzureRM.Netcore` into your PowerShell session
 with the [Import-Module](/powershell/module/Microsoft.PowerShell.Core/Import-Module) cmdlet, and then sign in
-with your Azure credentials. Importing a module does __not__ require elevated privileges.
+with your Azure credentials. Importing a module does **not** require elevated privileges.
 
 ```powershell
 # Import the module into the PowerShell session
@@ -96,6 +96,7 @@ following functions are implemented in AzureRM.Netcore modules:
 * Environment
   - Get the different out-of-box Microsoft Azure environments
   - Add/Set/Remove customized environments (like your Azure Stack or Windows Azure Pack environments)
+
 * Management plane cmdlets for Azure services using Resource Manager and Service Management interfaces.
   - Virtual Machine
   - App Service (Websites)

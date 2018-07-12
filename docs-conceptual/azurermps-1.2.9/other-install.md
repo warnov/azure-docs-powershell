@@ -26,11 +26,11 @@ Download the [Azure PowerShell WebPI package](http://aka.ms/webpi-azps) and star
 > automatically removes them. This simplifies your environment by ensuring that only one version
 > of Azure PowerShell is installed. However, there are scenarios where you may need multiple
 > versions installed at the same time.
->
+> 
 > PowerShell Gallery modules install modules in
 > `$env:ProgramFiles\WindowsPowerShell\Modules`. In contrast, the WebPI installer
 > installs the Azure modules in `$env:ProgramFiles(x86)\Microsoft SDKs\Azure\PowerShell\`.
->
+> 
 > If an error occurs during install, you can manually remove the Azure* folders in your
 > `$env:ProgramFiles\WindowsPowerShell\Modules` folder, and try the installation again.
 
@@ -45,8 +45,8 @@ Get-Module -ListAvailable Azure* | Select-Object Name, Version, Path
 
 > [!NOTE]
 > There is a known issue that can occur when installing from WebPI. If your computer requires a
-restart due to system updates or other installations, it may cause updates to `$env:PSModulePath` to
-fail to include the path where Azure PowerShell is installed.
+> restart due to system updates or other installations, it may cause updates to `$env:PSModulePath` to
+> fail to include the path where Azure PowerShell is installed.
 
 When attempting to load or execute cmdlets after installation, you can receive the following error
 message:
